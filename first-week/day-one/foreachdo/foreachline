@@ -100,60 +100,6 @@ Version() {
 # ==============================================================================≈
 # Get the options
 
-#  getopts chaîne_d_options nom [arguments]
-# getopts  est  utilise par les scripts shell pour analyser les
-# paramètres positionnels. La chaîne_d_options contient l'ensemble des
-# lettres d'options à reconnaître. Si une lettre est suivie par un
-# deux-points
-# (:), l'option est censée comprendre un argument, qui peut en
-# être séparé par une espace. À chaque invocation, getopts place l'option
-# suivante dans la variable shell dont le nom est fourni, en  la  créant  si
-# elle  n'existe  pas. Il place également l'index de l'argument
-# suivant à analyser dans la variable OPTIND. OPTIND est initialisé à 1
-# à chaque lancement d'un shell ou d'un script. Quand une option
-# nécessite un
-# argument, getopts place celui-ci dans la variable OPTARG.
-#  Le shell ne réinitialise pas OPTIND automatiquement, il faut le faire
-#  manuellement si des appels multiples à getopts au sein du même shell
-#  utilisent
-# des ensembles différents de paramètres.
-
-# Lorsque la fin des options est atteinte, getopts se termine
-# avec un code de retour supérieur à zéro. OPTIND est rempli avec le rang
-# du premier argument non-option, et nom contient '?'.
-#
-# getopts analyse en principe les paramètres positionnels, mais
-# si d'autres arguments lui sont transmis, getopts analysera ces derniers.
-#
-# getopts  peut renvoyer des erreurs de deux manières. Si le
-# premier caractère de la chaîne_d_options est un deux-points, les erreurs
-# sont renvoyées de manière silencieuse. Lors d'un fonctionnement normal,
-# des
-# messages de diagnostique sont affichés si une option est
-# illégale, ou s'il manque un argument d'option. Si la variable OPTERR
-# vaut 0, aucun message d'erreur ne sera affiché, même si le premier
-# caractère  de
-# la chaîne_d_options n'est pas un deux-points.
-
-# Si  une option illégale est rencontrée, getopts met un point
-# d'interrogation ? dans la variable nom, affiche un message d'erreur
-# (s'il n'est pas en mode silencieux), et détruit la variable OPTARG.
-# Si getopts
-# fonctionne en mode silencieux, le caractère d'option est
-# placé dans OPTARG et aucun message de diagnostique n'est affiché.
-
-# Lorsqu'un argument d'option est manquant, et si getopts
-# n'est pas silencieux, un point d'interrogation (?) est placé dans
-# la variable nom, OPTARG est détruit, et un message de diagnostique
-# est  affiché.  Si
-
-# getopts est silencieux, un deux-points (:) est placé dans
-# la variable nom et OPTARG est rempli avec le caractère d'option trouvé.
-
-# getopts renvoie la valeur Vrai si une option, prévue ou
-# imprévue, est trouvée. Il renvoie Faux si la fin des options est
-# atteinte, ou si une erreur se produit.
-
 while getopts ":hHvVlL" option; do
   case $option in
   h | H) # display Help
