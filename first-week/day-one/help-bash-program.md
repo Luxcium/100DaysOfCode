@@ -60,6 +60,9 @@ Remove that function because you do not need it anymore. You can do that with th
 
 ## Creating the Help function
 
+ >- In the [first article](https://opensource.com/article/19/12/introduction-automation-bash-scripts) in this series, you created a very small, one-line Bash script and explored the reasons for creating shell scripts and why they are the most efficient option for the system administrator, rather than compiled programs.
+ >- In the [second article](https://opensource.com/article/19/12/creating-bash-script-template), you began the task of creating a fairly simple template that you can use as a starting point for other Bash programs, then explored ways to test it.
+
 Open the **hello** program in an editor and add the Help function below to the **hello** program code after the copyright statement but before the **echo *"Hello world!"*** statement. This Help function will display a short description of the program, a syntax diagram, and short descriptions of the available options. Add a call to the Help function to test it and some comment lines that provide a visual demarcation between the functions and the main portion of the program:
 
 ```bash
@@ -109,6 +112,7 @@ Hello world!
 Because you have not added any logic to display Help only when you need it, the program will always display the Help. Since the function is working correctly, read on to add some logic to display the Help only when the **-h** option is used when you invoke the program at the command line.
 
 ## Handling options
+
 A Bash script's ability to handle command-line options such as **-h** gives some powerful capabilities to direct the program and modify what it does. In the case of the **-h** option, you want the program to print the Help text to the terminal session and then quit without running the rest of the program. The ability to process options entered at the command line can be added to the Bash script using the `while` command (see [How to program with Bash: Loops](https://opensource.com/article/19/10/programming-bash-loops) to learn more about `while`) in conjunction with the `getops` and `case` commands.
 
 The `getops` command reads any and all options specified at the command line and creates a list of those options. In the code below, the `while` command loops through the list of options by setting the variable `$options` for each. The `case` statement is used to evaluate each option in turn and execute the statements in the corresponding stanza. The `while` statement will continue to evaluate the list of options until they have all been processed or it encounters an exit statement, which terminates the program.
@@ -202,8 +206,7 @@ Test the program again using the same options as before and see how it works now
 ## Where you are
 
 
- >- In the [first article](https://opensource.com/article/19/12/introduction-automation-bash-scripts) in this series, you created a very small, one-line Bash script and explored the reasons for creating shell scripts and why they are the most efficient option for the system administrator, rather than compiled programs.
- >- In the [second article](https://opensource.com/article/19/12/creating-bash-script-template), you began the task of creating a fairly simple template that you can use as a starting point for other Bash programs, then explored ways to test it.
+
 
 
 You have accomplished a good amount in this article by adding the capability to process command-line options and a Help procedure. Your Bash script now looks like this:

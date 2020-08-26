@@ -47,3 +47,9 @@ function unsetforeachdo() {
   unset -f foreachfile 2>/dev/null
   unset -f foreachline 2>/dev/null
 }
+
+touch fordirdo
+touch fordotdirdo
+touch foreachdirdo
+touch foreachfile
+touch foreachline
