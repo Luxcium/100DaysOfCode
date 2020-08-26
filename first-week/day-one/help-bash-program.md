@@ -11,7 +11,7 @@
 
 ## Why Help?
 
->**While creating your Help facility, you will also learn about using functions and how to handle command-line options such as -h.**
+>While creating your Help facility, you will also learn about using functions and how to handle command-line options such as **-h**.
 
 Even fairly simple Bash programs should have some sort of Help facility, even if it is fairly rudimentary. Many of the Bash shell programs I write are used so infrequently that I forget the exact syntax of the command I need. Others are so complex that I need to review the options and arguments even when I use them frequently.
 Having a built-in Help function allows you to view those things without having to inspect the code itself. A good and complete Help facility is also a part of program documentation.
@@ -28,7 +28,7 @@ The syntax of a function is:
     FunctionName(){program statements}
 ```
 
-Explore this by creating a simple function at the CLI. (The function is stored in the shell environment for the shell instance in which it is created.) You are going to create a function called hw, which stands for "hello world." Enter the following code at the CLI and press Enter. Then enter hw as you would any other shell command:
+Explore this by creating a simple function at the CLI. (The function is stored in the shell environment for the shell instance in which it is created.) You are going to create a function called **hw**, which stands for *"hello world."* Enter the following code at the CLI and press **Enter**. Then enter **hw** as you would any other shell command:
 
 ```bash
     [student@testvm1 ~]$ hw(){ echo "Hi there kiddo"; }
@@ -37,7 +37,7 @@ Explore this by creating a simple function at the CLI. (The function is stored i
     [student@testvm1 ~]$
 ```
 
-OK, so I am a little tired of the standard "Hello world" starter. Now, list all of the currently defined functions. There are a lot of them, so I am showing just the new hw function. When it is called from the command line or within a program, a function performs its programmed task and then exits and returns control to the calling entity, the command line, or the next Bash program statement in a script after the calling statement:
+OK, so I am a little tired of the standard *"Hello world"* starter. Now, list all of the currently defined functions. There are a lot of them, so I am showing just the new **hw** function. When it is called from the command line or within a program, a function performs its programmed task and then exits and returns control to the calling entity, the command line, or the next Bash program statement in a script after the calling statement:
 
 ```bash
 
@@ -50,7 +50,7 @@ OK, so I am a little tired of the standard "Hello world" starter. Now, list all 
     <snip>
 ```
 
-Remove that function because you do not need it anymore. You can do that with the unset command:
+Remove that function because you do not need it anymore. You can do that with the `unset` command:
 
 ```bash
     [student@testvm1 ~]$ unset -f hw ; hw
@@ -60,7 +60,7 @@ Remove that function because you do not need it anymore. You can do that with th
 
 ## Creating the Help function
 
-Open the hello program in an editor and add the Help function below to the hello program code after the copyright statement but before the echo "Hello world!" statement. This Help function will display a short description of the program, a syntax diagram, and short descriptions of the available options. Add a call to the Help function to test it and some comment lines that provide a visual demarcation between the functions and the main portion of the program:
+Open the **hello** program in an editor and add the Help function below to the **hello** program code after the copyright statement but before the **echo *"Hello world!"*** statement. This Help function will display a short description of the program, a syntax diagram, and short descriptions of the available options. Add a call to the Help function to test it and some comment lines that provide a visual demarcation between the functions and the main portion of the program:
 
 ```bash
     ################################################################################
@@ -106,14 +106,14 @@ Hello world!
 [student@testvm1 ~]$
 ```
 
-Because you have not added any logic to display Help only when you need it, the program will always display the Help. Since the function is working correctly, read on to add some logic to display the Help only when the -h option is used when you invoke the program at the command line.
+Because you have not added any logic to display Help only when you need it, the program will always display the Help. Since the function is working correctly, read on to add some logic to display the Help only when the **-h** option is used when you invoke the program at the command line.
 
 ## Handling options
-A Bash script's ability to handle command-line options such as -h gives some powerful capabilities to direct the program and modify what it does. In the case of the -h option, you want the program to print the Help text to the terminal session and then quit without running the rest of the program. The ability to process options entered at the command line can be added to the Bash script using the while command (see How to program with Bash: Loops to learn more about while) in conjunction with the getops and case commands.
+A Bash script's ability to handle command-line options such as **-h** gives some powerful capabilities to direct the program and modify what it does. In the case of the **-h** option, you want the program to print the Help text to the terminal session and then quit without running the rest of the program. The ability to process options entered at the command line can be added to the Bash script using the `while` command (see [How to program with Bash: Loops](https://opensource.com/article/19/10/programming-bash-loops) to learn more about `while`) in conjunction with the `getops` and `case` commands.
 
-The getops command reads any and all options specified at the command line and creates a list of those options. In the code below, the while command loops through the list of options by setting the variable $options for each. The case statement is used to evaluate each option in turn and execute the statements in the corresponding stanza. The while statement will continue to evaluate the list of options until they have all been processed or it encounters an exit statement, which terminates the program.
+The `getops` command reads any and all options specified at the command line and creates a list of those options. In the code below, the `while` command loops through the list of options by setting the variable `$options` for each. The `case` statement is used to evaluate each option in turn and execute the statements in the corresponding stanza. The `while` statement will continue to evaluate the list of options until they have all been processed or it encounters an exit statement, which terminates the program.
 
-Be sure to delete the Help function call just before the echo "Hello world!" statement so that the main body of the program now looks like this:
+Be sure to delete the Help function call just before the **echo *"Hello world!"*** statement so that the main body of the program now looks like this:
 
 ```bash
 ################################################################################
@@ -136,10 +136,11 @@ done
 echo "Hello world!"
 ```
 
-Notice the double semicolon at the end of the exit statement in the case option for -h. This is required for each option added to this case statement to delineate the end of each option.
+Notice the double semicolon at the end of the exit statement in the case option for **-h**. This is required for each option added to this case statement to delineate the end of each option.
 
-## Testing
-Testing is now a little more complex. You need to test your program with a number of different options—and no options—to see how it responds. First, test with no options to ensure that it prints "Hello world!" as it should:
+## Testing
+
+Testing is now a little more complex. You need to test your program with a number of different options —and no options— to see how it responds. First, test with no options to ensure that it prints ***"Hello world!"*** as it should:
 
 ```bash
 [student@testvm1 ~]$ ./hello
@@ -179,9 +180,9 @@ V     Print software version and exit.
 [student@testvm1 ~]$
 ```
 
-The program just ignores any options without specific responses without generating any errors. But notice the last entry (with -lkjsahdf for options): because there is an h in the list of options, the program recognizes it and prints the Help text. This testing has shown that the program doesn't have the ability to handle incorrect input and terminate the program if any is detected.
+The program just ignores any options without specific responses without generating any errors. But notice the last entry (with **-lkjsahdf** for options): because there is an **h** in the list of options, the program recognizes it and prints the Help text. This testing has shown that the program doesn't have the ability to handle incorrect input and terminate the program if any is detected.
 
-You can add another case stanza to the case statement to match any option that doesn't have an explicit match. This general case will match anything you have not provided a specific match for. The case statement now looks like this, with the catch-all match of \? as the last case. Any additional specific cases must precede this final one:
+You can add another case stanza to the case statement to match any option that doesn't have an explicit match. This general case will match anything you have not provided a specific match for. The case statement now looks like this, with the catch-all match of **\?** as the last case. Any additional specific cases must precede this final one:
 
 ```bash
 while getopts ":h" option; do
@@ -199,6 +200,11 @@ done
 Test the program again using the same options as before and see how it works now.
 
 ## Where you are
+
+
+ >- In the [first article](https://opensource.com/article/19/12/introduction-automation-bash-scripts) in this series, you created a very small, one-line Bash script and explored the reasons for creating shell scripts and why they are the most efficient option for the system administrator, rather than compiled programs.
+ >- In the [second article](https://opensource.com/article/19/12/creating-bash-script-template), you began the task of creating a fairly simple template that you can use as a starting point for other Bash programs, then explored ways to test it.
+
 
 You have accomplished a good amount in this article by adding the capability to process command-line options and a Help procedure. Your Bash script now looks like this:
 
@@ -313,7 +319,7 @@ The next article will look at initializing variables and doing a bit of sanity c
  > ## About the author
  > David Both is an Open Source Software and GNU/Linux advocate, trainer, writer, and speaker who lives in Raleigh North Carolina. He is a strong proponent of and evangelist for the "Linux Philosophy." David has been in the IT industry for nearly 50 years. He has taught RHCE classes for Red Hat and has worked at MCI Worldcom, Cisco, and the State of North Carolina. He has been working with Linux and Open Source Software for over 20 years. David prefers to purchase the components and build his...
 
-[`CTRL+C/CTRL+V` Source: opensource.com ](https://opensource.com/article/19/12/help-bash-program)
+[Source: **`Ctrl`**+**`Insert`**`/`**`Shift`**+**`Insert`**](https://opensource.com/article/19/12/help-bash-program)
 
 [Author: David Both ](https://opensource.com/users/dboth)
 
