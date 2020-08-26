@@ -1,3 +1,7 @@
 #!/bin/sh
 
+for f in *; do
+  [ -f "${f}" ] && eval "${1:-'echo'} ${3}${f}${4} ${2}"
+done
+
 exit 0
