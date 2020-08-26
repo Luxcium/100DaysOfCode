@@ -1,6 +1,6 @@
 
 #  \#100DaysOfcode
-[![Twitter Follow](https://img.shields.io/twitter/follow/Luxcium?label=Follow%20me&style=social)](https://twitter.com/Luxcium?ref_src=github001)
+[![time tracker](https://wakatime.com/badge/github/Luxcium/100DaysOfCode.svg)](https://wakatime.com/badge/github/Luxcium/100DaysOfCode) [![Twitter Follow](https://img.shields.io/twitter/follow/Luxcium?label=Follow%20me&style=social)](https://twitter.com/Luxcium?ref_src=github001)
 
 
 Benjamin Vincent✨is doing the #100DaysOfCode challenge, is a Full-time #TypeScript worshiper, #NodeJS enthusiast & #VSCODE junkie. (he/him) cis-gender gay-boy 🇨🇦🍑🤓🐍🦋🍆
