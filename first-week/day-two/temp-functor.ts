@@ -29,15 +29,15 @@ export interface IFunctor<A = any> extends IFMap<A>, IFork<A>, FunctorType<A> {
 }
 
 
-export class Functor<T = unknown>  {
-  public _value: T;
+// export class Functor<T = unknown>  {
+//   public _value: T;
 
-  public constructor(value: T) {
-    this._value = value;
-  }
+//   public constructor(value: T) {
+//     this._value = value;
+//   }
 
-    public map<R = any>(fn: (val: T) => R): IFunctor<R> {
-    return new Functor<R>(fn(this._value));
-  }
+//     public map<R = any>(fn: (val: T) => R): IFunctor<R> {
+//     return new Functor<R>(fn(this._value));
+//   }
 
-}
+// }
