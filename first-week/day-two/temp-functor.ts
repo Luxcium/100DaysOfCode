@@ -8,6 +8,8 @@ export interface IFMap<A = any> /* <A = any, U = any> extends ValueType<A> */ {
   map: MapType<A> /* <A, U> */;
 }
 
+
+
 /** A functor must, in our implementation, Fork and return its internat value */
 export interface IFork<A = any> extends ValueType<A> {
   readonly fork: ForkType<A>;
