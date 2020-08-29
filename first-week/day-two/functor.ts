@@ -52,7 +52,9 @@ export interface IFork<A = unknown> { // extends ValueType<A>
 // }
 
 /** A complex Functor must extend simple Functor and fork */
+
 export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IFMap<T>, IFork<T> {
+
   public constructor(value: T) {
     super(value)
     return this
@@ -63,7 +65,9 @@ export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IF
 
   /** Return the internal value of a Functor or type extending Functor */
   public get fork(): T {
+
     return this.value;
+
   }
 
   /** Returns a string representation of a Functor or type extending Functor. */
