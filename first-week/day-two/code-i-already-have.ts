@@ -231,7 +231,7 @@ A value that implements the Applicative specification must also implement the Ap
 */
 // export type IOfT<T = unknown> = IApT<T>; // & IOfX<T>;
 export interface IOfX<T = unknown> {
-  readonly of: (val:T) => IApT<T>;
+  readonly of: (val: T) => IApT<T>;
 }
 /*
 v['fantasy-land/ap'](A['fantasy-land/of'](x => x)) is equivalent to v (identity)
@@ -497,9 +497,9 @@ export interface HKT<URI, A> {
 export type Option<A> =
   | { type: 'None' }
   | {
-      type: 'Some';
-      value: A;
-    };
+    type: 'Some';
+    value: A;
+  };
 
 export interface IChain<A = any> extends ValueType<A> {
   /** fantasy-land/chain :: Chain m => m A ~> (A -> m B) -> m B */
