@@ -39,12 +39,12 @@ export interface IFork<A = unknown> { // extends ValueType<A>
 // }
 
 /** A complex Functor must extend simple Functor and fork */
-export class FunctorComplex<T = unknown> extends FunctorSimplex implements IFork<T> {
+export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IFork<T> {
   public constructor(value: T) {
     super(value)
   }
   public get fork(): T {
-    return this._value as T
+    return this._value
   }
 
 }
