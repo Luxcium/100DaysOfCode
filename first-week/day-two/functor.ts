@@ -21,6 +21,43 @@ export interface IFMap<A = unknown> {
   map: MapType<A>;
 }
 
+type Constructable<ClassInstance> = new (...args: any[]) => ClassInstance;
+
+export function Mapabble<T, BaseClass extends Constructable<any>>(Base: BaseClass) {
+  return class extends Base implements IFMap<T>{
+    public map<R = unknown>(fn: (val: T) => R): InstanceType<typeof Base> {
+      return new Base(fn(this.value));
+    }
+  }
+}
+
+export class FunctorMixin<T = unknown>  {
+  protected value!: T;
+  public constructor(value: T) {
+
+    const functorSimplex = {
+      value: {
+        value,
+        configurable: false,
+        enumerable: true,
+        writable: false,
+      },
+
+    }
+    Object.defineProperties(this, functorSimplex);
+  }
+  // -- public map<R = unknown>(fn: (val: T) => R): FunctorSimplex<R> {
+  //   return new FunctorSimplex<R>(fn(this.value));
+  // }
+}
+
+
+export const SomethingNew = <T>() => Mapabble<T, typeof FunctorMixin>(FunctorMixin)
+
+export const instance = new (SomethingNew<number>())(45)
+
+instance.map((val) => val.toString())
+
 /** A simple Functor must map */
 export class FunctorSimplex<T = unknown> implements IFMap<T> {
   protected value!: T;
