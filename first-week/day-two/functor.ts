@@ -7,52 +7,6 @@
  * =============================================================================≈
  * Scientia es lux principium✨ ™ - SEE THE BOTTOM OF THIS FILES FOR MORE INFO
  */
-// #region ====================================================================≈
-
-// export interface ValueType<A = unknown> {
-//   readonly value: A;
-// }
-
-// type Constructable<ClassInstance> = new <T>(...args: T[]) => ClassInstance;
-
-
-// export function Mapabble<T, TBase extends Constructable<any>>(Base: TBase) {
-//   return class extends Base<T> implements IFMap<T>{
-//     public map<R = unknown>(fn: (val: T) => R): any { // : InstanceType<typeof Base>
-//       return new Base(fn(this.value));
-//     }
-//   }
-// }
-
-// //
-// export class FunctorMixin<T = unknown> {
-//   protected value!: T;
-//   public constructor(value: T) {
-
-//     const functorSimplex = {
-//       value: {
-//         value,
-//         configurable: false,
-//         enumerable: true,
-//         writable: false,
-//       },
-
-//     }
-//     Object.defineProperties(this, functorSimplex);
-//   }
-// }
-
-
-// export function MakeMapabbleFunctor<T>() {
-//   return Mapabble<T, typeof FunctorMixin>(FunctorMixin);
-// }
-
-// export const MyFunctor = (MakeMapabbleFunctor<number>())
-// const myFunctor = new MyFunctor(45)
-// const newFunctor = myFunctor.map((val) => val.toString())
-// console.log(newFunctor)
-// #endregion ==================================================================≈
-
 
 /** A Map takes any value A and morph it into any value B */
 export type MapType<A = unknown> = (
@@ -66,8 +20,6 @@ export interface IFMap<A = unknown> {
   /** `fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b` */
   map: MapType<A>;
 }
-
-
 
 /** A simple Functor must map */
 export class FunctorSimplex<T = unknown> implements IFMap<T> {
@@ -90,8 +42,6 @@ export class FunctorSimplex<T = unknown> implements IFMap<T> {
   }
 }
 
-
-
 export interface IFork<A = unknown> { // extends ValueType<A>
   /** Return the internal value of a Functor or type extending Functor */
   readonly fork: A;
@@ -99,7 +49,6 @@ export interface IFork<A = unknown> { // extends ValueType<A>
 
 /** A complex Functor must extend simple Functor and fork */
 export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IFMap<T>, IFork<T> {
-
   public constructor(value: T) {
     super(value)
     return this
@@ -112,7 +61,6 @@ export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IF
   public get fork(): T {
 
     return this.value;
-
   }
 
   /** Returns a string representation of a Functor or type extending Functor. */
@@ -156,6 +104,7 @@ export function testing() {
 
   return testFunctorComplex() && testFunctorSimplex()
 }
+
 /*
 ================================================================================≈
 † LUXCIUM‡ LICENSE — *NO* PERMISSION GRANTED — PROVIDED "AS IS" WITHOUT WARRANTY
