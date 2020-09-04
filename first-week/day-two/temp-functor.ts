@@ -6,19 +6,17 @@
  * @license LUXCIUM-LICENSE for this file only or other having the same mention
  * =============================================================================≈
  * Scientia es lux principium✨ ™ - SEE THE BOTTOM OF THIS FILES FOR MORE INFO
-*/
+ */
 
 export type FunctorType<T = any> = IFMap<T> & IFork<T>;
 export type ForkType<A = any> = A;
 export type MapType<A = any> /* <A = any, U = any> = <B = U> */ = (
-  fn: (val: A) => any,
+  fn: (val: A) => any
 ) => IFMap;
 export interface IFMap<A = any> /* <A = any, U = any> extends ValueType<A> */ {
   /** fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b */
   map: MapType<A> /* <A, U> */;
 }
-
-
 
 /** A functor must, in our implementation, Fork and return its internat value */
 export interface IFork<A = any> extends ValueType<A> {
@@ -30,14 +28,12 @@ export interface ValueType<A = any> {
 
 /** A functor must FMap and in our implementation of a functor must Fork */
 
-
 export interface IFunctor<A = any> extends IFMap<A>, IFork<A>, FunctorType<A> {
   map<B>(fn: (val: A) => B): FunctorType<B>;
   toString(): string;
   toValue(): ValueType<A>;
   readonly fork: A;
 }
-
 
 // export class Functor<T = unknown>  {
 //   public _value: T;
@@ -51,7 +47,6 @@ export interface IFunctor<A = any> extends IFMap<A>, IFork<A>, FunctorType<A> {
 //   }
 
 // }
-
 
 /*
 ================================================================================≈
