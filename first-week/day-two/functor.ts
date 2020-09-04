@@ -7,31 +7,37 @@
  * =============================================================================≈
  * Scientia es lux principium✨ ™ - SEE THE BOTTOM OF THIS FILES FOR MORE INFO
  */
+// #region ====================================================================≈
 /** A Map takes any value A and morph it into any value B */
 export type MapType<A = unknown> = (
   fn: <B = unknown>(val: A) => B,
 ) => IFMap;
-
 /**
  * Anything that implement a Map must implement
  * a method of the form map: MapType<A>
  */
 export interface IFMap<A = unknown> {
-  /** fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b */
+  /** `fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b` */
   map: MapType<A>;
 }
 
-type Constructable<ClassInstance> = new (...args: any[]) => ClassInstance;
+export interface ValueType<A = unknown> {
+  readonly value: A;
+}
 
-export function Mapabble<T, BaseClass extends Constructable<any>>(Base: BaseClass) {
-  return class extends Base implements IFMap<T>{
-    public map<R = unknown>(fn: (val: T) => R): InstanceType<typeof Base> {
+type Constructable<ClassInstance> = new <T>(...args: T[]) => ClassInstance;
+
+
+export function Mapabble<T, TBase extends Constructable<any>>(Base: TBase) {
+  return class extends Base<T> implements IFMap<T>{
+    public map<R = unknown>(fn: (val: T) => R): any { // : InstanceType<typeof Base>
       return new Base(fn(this.value));
     }
   }
 }
 
-export class FunctorMixin<T = unknown>  {
+//
+export class FunctorMixin<T = unknown> {
   protected value!: T;
   public constructor(value: T) {
 
@@ -46,17 +52,18 @@ export class FunctorMixin<T = unknown>  {
     }
     Object.defineProperties(this, functorSimplex);
   }
-  // -- public map<R = unknown>(fn: (val: T) => R): FunctorSimplex<R> {
-  //   return new FunctorSimplex<R>(fn(this.value));
-  // }
 }
 
 
-export const SomethingNew = <T>() => Mapabble<T, typeof FunctorMixin>(FunctorMixin)
+export function MakeMapabbleFunctor<T>() {
+  return Mapabble<T, typeof FunctorMixin>(FunctorMixin);
+}
 
-export const instance = new (SomethingNew<number>())(45)
-
-instance.map((val) => val.toString())
+export const MyFunctor = (MakeMapabbleFunctor<number>())
+const myFunctor = new MyFunctor(45)
+const newFunctor = myFunctor.map((val) => val.toString())
+console.log(newFunctor)
+// #endregion ==================================================================≈
 
 /** A simple Functor must map */
 export class FunctorSimplex<T = unknown> implements IFMap<T> {
