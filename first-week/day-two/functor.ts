@@ -7,17 +7,17 @@
  * =============================================================================≈
  * Scientia es lux principium✨ ™ - SEE THE BOTTOM OF THIS FILES FOR MORE INFO
  */
+
 /** A Map takes any value A and morph it into any value B */
 export type MapType<A = unknown> = (
   fn: <B = unknown>(val: A) => B,
 ) => IFMap;
-
 /**
  * Anything that implement a Map must implement
  * a method of the form map: MapType<A>
  */
 export interface IFMap<A = unknown> {
-  /** fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b */
+  /** `fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b` */
   map: MapType<A>;
 }
 
@@ -35,8 +35,6 @@ export class FunctorSimplex<T = unknown> implements IFMap<T> {
       },
 
     }
-    // this._value = value;
-
     Object.defineProperties(this, functorSimplex);
   }
   public map<R = unknown>(fn: (val: T) => R): FunctorSimplex<R> {
@@ -44,26 +42,13 @@ export class FunctorSimplex<T = unknown> implements IFMap<T> {
   }
 }
 
-export function testFunctorSimplex() {
-  const myFunctorOne = new FunctorSimplex('10')
-  myFunctorOne.map((a: string) => a)
-  myFunctorOne.map((a: string): number => a.length)
-}
-
-
-// export type ForkType<A = unknown> = A;
 export interface IFork<A = unknown> { // extends ValueType<A>
   /** Return the internal value of a Functor or type extending Functor */
   readonly fork: A;
 }
-// export interface ValueType<A = any> {
-//   readonly _value: A;
-// }
 
 /** A complex Functor must extend simple Functor and fork */
-
 export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IFMap<T>, IFork<T> {
-
   public constructor(value: T) {
     super(value)
     return this
@@ -76,7 +61,6 @@ export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IF
   public get fork(): T {
 
     return this.value;
-
   }
 
   /** Returns a string representation of a Functor or type extending Functor. */
@@ -90,16 +74,36 @@ export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IF
 }
 
 
+export function testing() {
+  function testFunctorSimplex() {
+    try {
+      const myFunctorOne = new FunctorSimplex('10')
+      myFunctorOne.map((a: string) => a)
+      myFunctorOne.map((a: string): number => a.length)
+      return true
+    } catch (error) {
+      return false
+    }
+  }
 
-export function testFunctorComplex() {
-  const myFunctorTwo = new FunctorComplex('10')
-  myFunctorTwo.map((a: string) => a)
-  const aFunctorSmplx: FunctorSimplex<number> = myFunctorTwo.map((a: string): number => a.length);
-  // const aFunctorCmplx: FunctorComplex<number> = aFunctorSmplx.map((b: number) => b * 2)
-  console.log(aFunctorSmplx)
+  function testFunctorComplex() {
+    try {
+      const myFunctorTwo = new FunctorComplex("1516")
+      myFunctorTwo.map((a: string) => a)
+      const aFunctorSmplx: FunctorSimplex<number> = myFunctorTwo.map((a: string): number => a.length);
+      void myFunctorTwo.fork;
+      void aFunctorSmplx
+      void myFunctorTwo.toString()
+      void myFunctorTwo.toValue()
+      return true
+    } catch (error) {
+      return false
+    }
+
+  }
+
+  return testFunctorComplex() && testFunctorSimplex()
 }
-testFunctorComplex()
-
 
 /*
 ================================================================================≈
