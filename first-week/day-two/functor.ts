@@ -8,6 +8,52 @@
  * Scientia es lux principium✨ ™ - SEE THE BOTTOM OF THIS FILES FOR MORE INFO
  */
 // #region ====================================================================≈
+
+// export interface ValueType<A = unknown> {
+//   readonly value: A;
+// }
+
+// type Constructable<ClassInstance> = new <T>(...args: T[]) => ClassInstance;
+
+
+// export function Mapabble<T, TBase extends Constructable<any>>(Base: TBase) {
+//   return class extends Base<T> implements IFMap<T>{
+//     public map<R = unknown>(fn: (val: T) => R): any { // : InstanceType<typeof Base>
+//       return new Base(fn(this.value));
+//     }
+//   }
+// }
+
+// //
+// export class FunctorMixin<T = unknown> {
+//   protected value!: T;
+//   public constructor(value: T) {
+
+//     const functorSimplex = {
+//       value: {
+//         value,
+//         configurable: false,
+//         enumerable: true,
+//         writable: false,
+//       },
+
+//     }
+//     Object.defineProperties(this, functorSimplex);
+//   }
+// }
+
+
+// export function MakeMapabbleFunctor<T>() {
+//   return Mapabble<T, typeof FunctorMixin>(FunctorMixin);
+// }
+
+// export const MyFunctor = (MakeMapabbleFunctor<number>())
+// const myFunctor = new MyFunctor(45)
+// const newFunctor = myFunctor.map((val) => val.toString())
+// console.log(newFunctor)
+// #endregion ==================================================================≈
+
+
 /** A Map takes any value A and morph it into any value B */
 export type MapType<A = unknown> = (
   fn: <B = unknown>(val: A) => B,
@@ -21,49 +67,7 @@ export interface IFMap<A = unknown> {
   map: MapType<A>;
 }
 
-export interface ValueType<A = unknown> {
-  readonly value: A;
-}
 
-type Constructable<ClassInstance> = new <T>(...args: T[]) => ClassInstance;
-
-
-export function Mapabble<T, TBase extends Constructable<any>>(Base: TBase) {
-  return class extends Base<T> implements IFMap<T>{
-    public map<R = unknown>(fn: (val: T) => R): any { // : InstanceType<typeof Base>
-      return new Base(fn(this.value));
-    }
-  }
-}
-
-//
-export class FunctorMixin<T = unknown> {
-  protected value!: T;
-  public constructor(value: T) {
-
-    const functorSimplex = {
-      value: {
-        value,
-        configurable: false,
-        enumerable: true,
-        writable: false,
-      },
-
-    }
-    Object.defineProperties(this, functorSimplex);
-  }
-}
-
-
-export function MakeMapabbleFunctor<T>() {
-  return Mapabble<T, typeof FunctorMixin>(FunctorMixin);
-}
-
-export const MyFunctor = (MakeMapabbleFunctor<number>())
-const myFunctor = new MyFunctor(45)
-const newFunctor = myFunctor.map((val) => val.toString())
-console.log(newFunctor)
-// #endregion ==================================================================≈
 
 /** A simple Functor must map */
 export class FunctorSimplex<T = unknown> implements IFMap<T> {
@@ -79,8 +83,6 @@ export class FunctorSimplex<T = unknown> implements IFMap<T> {
       },
 
     }
-    // this._value = value;
-
     Object.defineProperties(this, functorSimplex);
   }
   public map<R = unknown>(fn: (val: T) => R): FunctorSimplex<R> {
@@ -88,24 +90,14 @@ export class FunctorSimplex<T = unknown> implements IFMap<T> {
   }
 }
 
-export function testFunctorSimplex() {
-  const myFunctorOne = new FunctorSimplex('10')
-  myFunctorOne.map((a: string) => a)
-  myFunctorOne.map((a: string): number => a.length)
-}
 
 
-// export type ForkType<A = unknown> = A;
 export interface IFork<A = unknown> { // extends ValueType<A>
   /** Return the internal value of a Functor or type extending Functor */
   readonly fork: A;
 }
-// export interface ValueType<A = any> {
-//   readonly _value: A;
-// }
 
 /** A complex Functor must extend simple Functor and fork */
-
 export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IFMap<T>, IFork<T> {
 
   public constructor(value: T) {
@@ -134,17 +126,36 @@ export class FunctorComplex<T = unknown> extends FunctorSimplex<T> implements IF
 }
 
 
+export function testing() {
+  function testFunctorSimplex() {
+    try {
+      const myFunctorOne = new FunctorSimplex('10')
+      myFunctorOne.map((a: string) => a)
+      myFunctorOne.map((a: string): number => a.length)
+      return true
+    } catch (error) {
+      return false
+    }
+  }
 
-export function testFunctorComplex() {
-  const myFunctorTwo = new FunctorComplex('10')
-  myFunctorTwo.map((a: string) => a)
-  const aFunctorSmplx: FunctorSimplex<number> = myFunctorTwo.map((a: string): number => a.length);
-  // const aFunctorCmplx: FunctorComplex<number> = aFunctorSmplx.map((b: number) => b * 2)
-  console.log(aFunctorSmplx)
+  function testFunctorComplex() {
+    try {
+      const myFunctorTwo = new FunctorComplex("1516")
+      myFunctorTwo.map((a: string) => a)
+      const aFunctorSmplx: FunctorSimplex<number> = myFunctorTwo.map((a: string): number => a.length);
+      void myFunctorTwo.fork;
+      void aFunctorSmplx
+      void myFunctorTwo.toString()
+      void myFunctorTwo.toValue()
+      return true
+    } catch (error) {
+      return false
+    }
+
+  }
+
+  return testFunctorComplex() && testFunctorSimplex()
 }
-testFunctorComplex()
-
-
 /*
 ================================================================================≈
 † LUXCIUM‡ LICENSE — *NO* PERMISSION GRANTED — PROVIDED "AS IS" WITHOUT WARRANTY
