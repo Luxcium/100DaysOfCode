@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { FunctorComplex, FunctorSimplex } from '../functor';
-
+import { fantasyLandMapFunctor } from './fantasy-land-functor.test';
 const stringFunctor = new FunctorComplex('StringValue');
-
+// const u = stringFunctor;
 /**
  *  FunctorComplex must be compatible with FunctorSimplex
  */
@@ -24,28 +24,31 @@ stringFunctor.map<number>(a => a.length).map(b => expect(b).to.be.a('number'));
  */
 expect(stringFunctor.map<string>(a => a)).to.be.instanceOf(FunctorComplex);
 
-/*
+expect(stringFunctor.map<string>(a => a).fork).to.be.equal('StringValue');
+expect(stringFunctor.map<string>(a => a).toString()).to.be.equal(
+  '"StringValue"',
+);
 
-https://github.com/fantasyland/fantasy-land#functor
+expect(stringFunctor.map<string>(a => a).toValue()).to.be.equal('StringValue');
 
-Functor
-u['fantasy-land/map'](a => a) is equivalent to u (identity)
-*/
-expect(stringFunctor.map<string>(a => a)).to.be.instanceOf(FunctorComplex);
-expect(stringFunctor.map<string>(a => a)).to.be.instanceOf(FunctorComplex);
-/*
-u['fantasy-land/map'](x => f(g(x))) is equivalent to u['fantasy-land/map'](g)['fantasy-land/map'](f) (composition)
+const numericFunctor = new FunctorComplex(24);
 
-fantasy-land/map method
-fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b
-A value which has a Functor must provide a fantasy-land/map method. The fantasy-land/map method takes one argument:
+expect(numericFunctor.map<number>(a => a).toString()).to.be.equal('24');
 
-u['fantasy-land/map'](f)
-f must be a function,
+expect(numericFunctor.map<number>(a => a).toValue()).to.be.eql(24);
 
-If f is not a function, the behaviour of fantasy-land/map is unspecified.
-f can return any value.
-No parts of f's return value should be checked.
-fantasy-land/map must return a value of the same Functor
+const objectFunctor = new FunctorComplex({
+  numeric: 24,
+  stringValue: 'StringValue',
+});
 
-*/
+expect(objectFunctor.map(a => a).toString()).to.be.equal(
+  '{"numeric":24,"stringValue":"StringValue"}',
+);
+
+expect(objectFunctor.map(a => a).toValue()).to.be.eql({
+  numeric: 24,
+  stringValue: 'StringValue',
+});
+// const numericFunctor = new FunctorComplex(24);
+fantasyLandMapFunctor(FunctorComplex);
