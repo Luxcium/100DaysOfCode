@@ -91,7 +91,7 @@ export interface HKT<URI, A> {
   readonly _A: A;
 }
 
-const domain = 'domain';
+const domain = "domain";
 
 export type Domain = typeof domain;
 
@@ -336,7 +336,7 @@ export class Monad<T = any> extends Functor<T> implements IMonad<T> {
    * @param value
    */
   public static of: Applicative<IMonad> = <TVal = any>(
-    value: TVal,
+    value: TVal
   ): IMonad<TVal> => new Monad<TVal>(value);
 
   public constructor(value: T) {
@@ -377,7 +377,7 @@ export class Monad<T = any> extends Functor<T> implements IMonad<T> {
    */
   public map<R>(fn: (val: T) => R): IMonad<R> {
     return Monad.of(
-      super.map<R>(x => fn(x)).fork,
+      super.map<R>((x) => fn(x)).fork
     );
   }
 
@@ -416,7 +416,7 @@ export class Monad<T = any> extends Functor<T> implements IMonad<T> {
    * @param c
    */
   public ap<R = any>(c: IMonad<(val: T) => R>): IMonad<R> {
-    return c.map<IMonad<R>>((fn: (val: T) => R) => this.map<R>(x => fn(x)))
+    return c.map<IMonad<R>>((fn: (val: T) => R) => this.map<R>((x) => fn(x)))
       .fork;
   }
 
@@ -451,7 +451,7 @@ export class Monad<T = any> extends Functor<T> implements IMonad<T> {
    */
   public chain<R = any>(fn: (val: T) => IMonad<R>): IMonad<R> {
     return Monad.of<IMonad<R>>(
-      this.map<IMonad<R>>(x => fn(x)).fork,
+      this.map<IMonad<R>>((x) => fn(x)).fork
     ).fork;
   }
 
@@ -460,14 +460,12 @@ export class Monad<T = any> extends Functor<T> implements IMonad<T> {
   };
 }
 
-
-
 export interface IApply<A = any, U = any> extends IFunctor<A> {
   /** fantasy-land/ap :: Apply f => f A ~> f (A -> B) -> f B */
   ap: ApType<A, U>;
 }
 export type ApType<A = any, U = any> = <B = U>(
-  Ap: IApply<(val: A) => B>,
+  Ap: IApply<(val: A) => B>
 ) => IApply<U>;
 
 export interface IApplicative {
@@ -495,18 +493,18 @@ export interface HKT<URI, A> {
 }
 
 export type Option<A> =
-  | { type: 'None' }
+  | { type: "None" }
   | {
-    type: 'Some';
-    value: A;
-  };
+      type: "Some";
+      value: A;
+    };
 
 export interface IChain<A = any> extends ValueType<A> {
   /** fantasy-land/chain :: Chain m => m A ~> (A -> m B) -> m B */
   chain: ChainType<A>;
 }
 export type ChainType<A = any> = <B = any>(
-  fn: (val: A) => IChain<B>,
+  fn: (val: A) => IChain<B>
 ) => IChain<B>;
 
 export interface IMonad<A = any> extends IChain<A>, IApply<A> {
@@ -514,8 +512,6 @@ export interface IMonad<A = any> extends IChain<A>, IApply<A> {
   ap<B = any>(Apply: IApply<(val: A) => B>): IMonad<B>;
   map<B>(fn: (val: A) => B): IMonad<B>;
 }
-
-
 
 /**
  * ## Functor
@@ -547,7 +543,7 @@ export interface IMonad<A = any> extends IChain<A>, IApply<A> {
 export type FunctorType<T = any> = IFMap<T> & IFork<T>;
 export type ForkType<A = any> = A;
 export type MapType<A = any> /* <A = any, U = any> = <B = U> */ = (
-  fn: (val: A) => any,
+  fn: (val: A) => any
 ) => IFMap;
 export interface IFMap<A = any> /* <A = any, U = any> extends ValueType<A> */ {
   /** fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b */
@@ -569,7 +565,6 @@ export interface IFunctor<A = any> extends IFMap<A>, IFork<A>, FunctorType<A> {
   toValue(): ValueType<A>;
   readonly fork: A;
 }
-
 
 /*
 ================================================================================≈
