@@ -22,6 +22,9 @@ Scientia es lux principium✨™
 ### First Week
 #### Day One
 #### Day Two
+##### Functors
+Working on functors as a main part of different days in the project.
+[Day Two Folder is where I work on my Functor definition](/first-week/day-two/README.md)
 #### Day Three
 
 ### Second Week
