@@ -4,7 +4,7 @@
 Catching up (today is the 18th day and I am late on my comitment) I have coded more than one hour average each day but did not produce the required code in the repo as part of my learning of new and specifics element.
 
 ## Mocha and Chai
-In this sixth day I have installed [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/) because I alway used [Jest](https://jestjs.io/) and I want to learn new way of testing my code.
+In this sixth day I have installed [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/) because I always used [Jest](https://jestjs.io/) and I want to learn new way of testing my code.
 
 ### Hello World code
 
