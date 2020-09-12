@@ -1,4 +1,6 @@
 # Day Two
 ## Functor
 
-### Functor
+### FunctorSimplex
+
+### FunctorComplex
