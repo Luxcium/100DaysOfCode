@@ -23,6 +23,8 @@
   },
   "devDependencies": {
     "@types/mocha": "^8.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
     "eslint": "^7.9.0",
     "eslint-formatter-git-log": "^0.5.3",
     "eslint-formatter-github": "^1.0.11",
