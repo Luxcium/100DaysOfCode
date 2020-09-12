@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { FunctorSimplex } from '../functor';
+import { FunctorSimplex } from '../functor-simplex';
 
 /**
  * @link https://github.com/fantasyland/fantasy-land#functor
