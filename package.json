@@ -19,8 +19,12 @@
   "homepage": "https://github.com/Luxcium/100daysofcode#readme",
   "dependencies": {
     "@types/chai": "^4.2.12",
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
     "@types/mocha": "^8.0.3",
-    "chai": "^4.2.0",
-    "mocha": "^8.1.3"
+    "eslint": "^7.8.1",
+    "mocha": "^8.1.3",
+    "prettier": "^2.1.1"
   }
 }

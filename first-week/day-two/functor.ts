@@ -24,6 +24,12 @@ export class FunctorSimplex<T = unknown> implements IFMap<T> {
   protected value!: T;
   public constructor(value: T) {
     const functorSimplex = {
+      'fantasy-land/map': {
+        value: this.map,
+        configurable: false,
+        enumerable: false,
+        writable: true,
+      },
       value: {
         value,
         configurable: false,
@@ -31,10 +37,15 @@ export class FunctorSimplex<T = unknown> implements IFMap<T> {
         writable: false,
       },
     };
-    Object.defineProperties(this, functorSimplex);
+    return Object.defineProperties(this, functorSimplex);
   }
+  /** fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b */
+  public 'fantasy-land/map' = this.map;
   public map<R = unknown>(fn: (val: T) => R): FunctorSimplex<R> {
-    return new FunctorSimplex<R>(fn(this.value));
+    if (typeof fn === 'function') {
+      return new FunctorSimplex<R>(fn(this.value));
+    }
+    throw new Error('If argument is not a function, the behaviour of map is unspecified');
   }
 }
 
@@ -45,14 +56,28 @@ export interface IFork<A = unknown> {
 }
 
 /** A complex Functor must extend simple Functor and fork */
-export class FunctorComplex<T = unknown> extends FunctorSimplex<T>
+export class FunctorComplex<T = unknown>
+  extends FunctorSimplex<T>
   implements IFMap<T>, IFork<T> {
   public constructor(value: T) {
     super(value);
-    return this;
+    const functorComplex = {
+      'fantasy-land/map': {
+        value: this.map,
+        configurable: false,
+        enumerable: false,
+        writable: true,
+      },
+    };
+    return Object.defineProperties(this, functorComplex);
   }
+  /** fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b */
+  public 'fantasy-land/map' = this.map;
   public map<R = unknown>(fn: (val: T) => R): FunctorComplex<R> {
-    return new FunctorComplex<R>(fn(this.fork));
+    if (typeof fn === 'function') {
+      return new FunctorComplex<R>(fn(this.fork));
+    }
+    throw new Error('If argument is not a function, the behaviour of map is unspecified');
   }
 
   /** Return the internal value of a Functor or type extending Functor */
@@ -73,7 +98,7 @@ export class FunctorComplex<T = unknown> extends FunctorSimplex<T>
 export function testing() {
   function testFunctorSimplex() {
     try {
-      const myFunctorOne = new FunctorSimplex("10");
+      const myFunctorOne = new FunctorSimplex('10');
       myFunctorOne.map((a: string) => a);
       myFunctorOne.map((a: string): number => a.length);
       return true;
@@ -84,10 +109,10 @@ export function testing() {
 
   function testFunctorComplex() {
     try {
-      const myFunctorTwo = new FunctorComplex("1516");
+      const myFunctorTwo = new FunctorComplex('1516');
       myFunctorTwo.map((a: string) => a);
       const aFunctorSmplx: FunctorSimplex<number> = myFunctorTwo.map(
-        (a: string): number => a.length
+        (a: string): number => a.length,
       );
       void myFunctorTwo.fork;
       void aFunctorSmplx;
