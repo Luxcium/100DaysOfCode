@@ -1,1 +1,4 @@
 # Day Two
+## Functor
+
+### Functor
