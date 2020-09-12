@@ -18,3 +18,12 @@ Benjamin Vincent✨is doing the #100DaysOfCode challenge, is a Full-time #TypeSc
 
 ----
 Scientia es lux principium✨™
+
+### First Week
+#### Day One
+#### Day Two
+#### Day Three
+
+### Second Week
+
+### Third Week
