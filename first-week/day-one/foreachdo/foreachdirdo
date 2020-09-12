@@ -25,6 +25,9 @@
 # « †Scientia es lux principium✨ » IS A TRADEMARK OF BENJAMIN VINCENT KASAPOGLU
 # (™ & © 2016-2020 ALL RIGHT RESERVED)
 
+__SAVE_PREV_VERSION_INFO__=VERSION
+VERSION="0.0.2"
+
 # Help
 # ==============================================================================≈
 Help() {
@@ -36,12 +39,14 @@ Help() {
   echo "options:"
   echo "-H or -h      Print this Help."
   echo "-L or -l      Print the MIT license notification."
-  echo "-V or -v      Print software version and exit."
+  echo "-V or -v      Print software version (v${VERSION}) and exit."
   echo
   echo "Will produce a string and evaluate it with the ITEM placed in the middle"
   echo "BEFORE__JUSTBEFORE-ITEM-JUSTAFTER__AFTER"
   echo "Where '__' represent a blank space and '-' represent no space at all"
   echo "use empty string to bypass i.e. \"\" or \'\' if you need to skip to next"
+  echo
+  echo "You can use \$ITEM or \$DIR to represenmt the currently iterated Directory name"
   echo
   echo "before       Command will be placed before folowed by a space."
   echo "after        Command will be placed after preceded by a space."
@@ -88,7 +93,7 @@ License() {
 
 Version() {
   # Display License
-  echo "v0.0.1"
+  echo "v${VERSION}"
   echo
   echo -e '\e[31m†Scientia es lux principium✨ ™\e[37m'
 }
@@ -129,7 +134,18 @@ unset -f License
 unset -f Version
 
 for d in .* *; do
+  __SAVE_PREV_ITEM__=ITEM
+  __SAVE_PREV_DIR__=DIR
+  ITEM=d
+  DIR=d
   [ -d "${d}" ] && eval "${1:-'echo'} ${3}${d}${4} ${2}"
+  ITEM=__SAVE_PREV_ITEM__
+  DIR=__SAVE_PREV_DIR__
+  unset -v __SAVE_PREV_ITEM__
+  unset -v __SAVE_PREV_DIR__
 done
+
+VERSION=__SAVE_PREV_VERSION_INFO__
+unset -v __SAVE_PREV_VERSION_INFO__
 
 exit 0
