@@ -1,5 +1,6 @@
 import { expect } from 'chai';
-import { FunctorComplex, FunctorSimplex } from '../functor';
+import { FunctorComplex } from '../functor-complex';
+import { FunctorSimplex } from '../functor-simplex';
 import { fantasyLandMapFunctor } from './fantasy-land-functor.test';
 const stringFunctor = new FunctorComplex('StringValue');
 // const u = stringFunctor;
@@ -52,3 +53,22 @@ expect(objectFunctor.map(a => a).toValue()).to.be.eql({
 });
 // const numericFunctor = new FunctorComplex(24);
 fantasyLandMapFunctor(FunctorComplex);
+
+function testFunctorComplex() {
+  try {
+    const myFunctorTwo = new FunctorComplex('1516');
+    myFunctorTwo.map((a: string) => a);
+    const aFunctorSmplx: FunctorSimplex<number> = myFunctorTwo.map(
+      (a: string): number => a.length,
+    );
+    void myFunctorTwo.fork;
+    void aFunctorSmplx;
+    void myFunctorTwo.toString();
+    void myFunctorTwo.toValue();
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+testFunctorComplex();
+// return  && testFunctorSimplex();
