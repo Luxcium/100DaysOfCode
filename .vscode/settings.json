@@ -1,6 +1,235 @@
 {
+
+        // $ BETTER-COMMENTS
+      // $ BETTER-COMMENTS
+      // $ BETTER-COMMENTS
+      "better-comments.tags": [
+            {
+                  // WARNING:
+                  "tag": "WARNING:",
+                  "color": "#FD3E",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // !!
+                  "tag": "!!",
+                  "color": "#FF2D00",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // ?
+                  "tag": "?",
+                  "color": "#3498DB",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // $
+                  "tag": "$",
+                  "color": "#f48e41",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // IIFE
+                  "tag": "IIFE",
+                  "color": "#FF3D",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // #region
+                  "tag": "#region",
+                  "color": "#555",
+                  "strikethrough": false,
+                  "backgroundColor": "#FF3D"
+            },
+            {
+                  // #endregion
+                  "tag": "#endregion",
+                  "color": "#222",
+                  "strikethrough": false,
+                  "backgroundColor": "#F15E"
+            },
+            {
+                  // #
+                  "tag": "#",
+                  "color": "#4AE",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // constructor
+                  "tag": "constructor",
+                  "color": "#F15E",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // private
+                  "tag": "private",
+                  "color": "#F15E",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // Fantasy Land
+                  "tag": "Fantasy Land",
+                  "color": "#F39D",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // protected
+                  "tag": "protected",
+                  "color": "#FD3E",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // ‽
+                  "tag": "‽",
+                  "color": "#6CBC",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // TEST_MODULE
+                  "tag": "TEST_MODULE",
+                  "color": "#6CBC",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // public
+                  "tag": "public",
+                  "color": "#FC5D", // "#FA0E",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // readonly
+                  "tag": "readonly",
+                  "color": "#F70E",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // static
+                  "tag": "static",
+                  "color": "#F70E",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // get
+                  "tag": "get",
+                  "color": "#6BFC",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // set
+                  "tag": "set",
+                  "color": "#85FE",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // %
+                  "tag": "%",
+                  "color": "#41e2f4",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // # -c-54442
+                  // †
+                  "tag": "†",
+                  "color": "#c54442",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // +
+                  "tag": "+",
+                  "color": "#c5f442",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // async
+                  "tag": "async",
+                  "color": "#FB3F",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // http
+                  "tag": "http",
+                  "color": "#FB3F",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // &
+                  "tag": "&",
+                  "color": "#a041f4",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // todo
+                  "tag": "todo",
+                  "color": "#FF8C00",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // *
+                  "tag": "*",
+                  "color": "#98C379",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // # -c-54442
+                  // iterator
+                  "tag": "iterator",
+                  "color": "#c54442",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // ¬
+                  "tag": "¬",
+                  "color": "#ffa0a0",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // -
+                  "tag": "-",
+                  "color": "#9BEA",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+            {
+                  // ====
+                  "tag": "====",
+                  "color": "#9BEA",
+                  "strikethrough": false,
+                  "backgroundColor": "transparent"
+            },
+      ],
   "editor.rulers": [
-    {
+      {
+        "column": 2,
+        "color": "#9BEA"
+      },
+      {
       "column": 80,
       "color": "#9BEA"
     },
