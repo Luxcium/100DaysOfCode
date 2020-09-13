@@ -1,6 +1,6 @@
 # Day Two
 
-
+I have been working on this functor project for the main part of days 2,3,6,8 and 9
 
 ## Functor
 
@@ -180,4 +180,4 @@ public toValue(): T
 ```
 
 
-###### Copyright © 2020 — LUXCIUM‡ (Benjamin Vincent Kasapoglu)
+###### Copyright © 2020 — LUXCIUM† (Benjamin Vincent Kasapoglu)
