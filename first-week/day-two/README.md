@@ -134,8 +134,17 @@ Returns a value `T` 'representation' of a `Functor` or a `Functor` extended type
 ```typescript
 public toValue(): T
 ```
-
+## LICENSE
 ```typescript
+/**
+ * =============================================================================≈
+ * @author Benjamin Vincent Kasapoglu (LUXCIUM)
+ * @copyright © 2020 - LUXCIUM (Benjamin Vincent Kasapoglu) <luxcium@neb401.com>
+ * @license LUXCIUM-LICENSE for this file only or other having the same mention
+ * =============================================================================≈
+ * Scientia es lux principium✨ ™
+ */
+
 /*
 ================================================================================≈
 † LUXCIUM‡ LICENSE — *NO* PERMISSION GRANTED — PROVIDED "AS IS" WITHOUT WARRANTY
