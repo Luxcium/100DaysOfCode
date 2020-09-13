@@ -1,0 +1,51 @@
+{
+  "name": "100daysofcode",
+  "version": "1.0.0",
+  "description": "[![time tracker](https://wakatime.com/badge/github/Luxcium/100DaysOfCode.svg)](https://wakatime.com/badge/github/Luxcium/100DaysOfCode) [![Twitter Follow](https://img.shields.io/twitter/follow/Luxcium?label=Follow%20me&style=social)](https://twitter.com/Luxcium?ref_src=github001)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luxcium/100daysofcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luxcium/100daysofcode/issues"
+  },
+  "homepage": "https://github.com/Luxcium/100daysofcode#readme",
+  "dependencies": {
+    "@types/chai": "^4.2.12",
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.9.0",
+    "eslint-formatter-git-log": "^0.5.3",
+    "eslint-formatter-github": "^1.0.11",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.4.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-lodash": "^7.1.0",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint-plugin-unicorn": "^21.0.0",
+    "mocha": "^8.1.3",
+    "prettier": "^2.1.1"
+  }
+}
