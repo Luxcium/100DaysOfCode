@@ -3,7 +3,7 @@ import { IFMap, IFork } from './typings/functor';
 
 export class FunctorComplex<T = unknown>
   extends FunctorSimplex<T>
-  implements IFMap<T>, IFork<T> {
+  implements IFMap<T>, IFork<T>, FunctorSimplex<T> {
   public constructor(value: T) {
     super(value);
     const functorComplex = {
@@ -16,7 +16,6 @@ export class FunctorComplex<T = unknown>
     };
     return Object.defineProperties(this, functorComplex);
   }
-  /** fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b */
   public 'fantasy-land/map' = this.map;
   public map<R = unknown>(fn: (val: T) => R): FunctorComplex<R> {
     if (typeof fn === 'function') {
@@ -27,16 +26,16 @@ export class FunctorComplex<T = unknown>
     );
   }
 
-  /** Return the internal value of a Functor or type extending Functor */
+  /** Return the internal value `T` of a Functor or type extending Functor */
   public get fork(): T {
     return this.value;
   }
 
-  /** Returns a string representation of a Functor or type extending Functor. */
+  /** Returns a string representation of a Functor or a Functor extended type. */
   public toString(): string {
     return JSON.stringify(this.fork);
   }
-  /** Returns a value representation of a Functor or type extending Functor. */
+  /** Returns a value `T` 'representation' of a Functor or a Functor extended type. */
   public toValue(): T {
     return JSON.parse(this.toString());
   }

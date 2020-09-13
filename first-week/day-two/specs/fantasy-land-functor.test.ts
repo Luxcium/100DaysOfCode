@@ -68,7 +68,7 @@ export function fantasyLandMapFunctor(Functor: typeof FunctorSimplex) {
    * If f is not a function, the behaviour of fantasy-land/map is unspecified.
    */
   expect(() => u['fantasy-land/map'](null)).to.throw(
-    'If argument is not a function, the behaviour of map is unspecified',
+    'If argument fn is not a function, the behaviour of map is unspecified',
   );
   expect(() => u['fantasy-land/map'](a => a)).not.to.throw();
 
