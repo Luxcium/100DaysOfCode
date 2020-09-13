@@ -20,8 +20,7 @@ export interface IFMap<A = unknown> {
 }
 
 export interface IFork<A = unknown> {
-  // extends ValueType<A>
-  /** Return the internal value of a Functor or type extending Functor */
+  /** Return the internal value `T` of a Functor or type extending Functor */
   readonly fork: A;
 }
 

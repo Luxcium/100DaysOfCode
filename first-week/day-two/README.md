@@ -1,4 +1,7 @@
 # Day Two
+
+
+
 ## Functor
 
 ### MapType
@@ -36,9 +39,6 @@ export interface IFork<A = unknown> {
   readonly fork: A;
 }
 ```
-
-  /** Return the internal value of a Functor or type extending Functor */
-  readonly fork: A;
 
 
 ### FunctorSimplex

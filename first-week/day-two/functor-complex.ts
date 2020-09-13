@@ -26,7 +26,6 @@ export class FunctorComplex<T = unknown>
     );
   }
 
-  /** Return the internal value `T` of a Functor or type extending Functor */
   public get fork(): T {
     return this.value;
   }
