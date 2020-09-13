@@ -178,3 +178,6 @@ public toValue(): T
 ================================================================================≈
 */
 ```
+
+
+###### Copyright © 2020 — LUXCIUM‡ (Benjamin Vincent Kasapoglu)
