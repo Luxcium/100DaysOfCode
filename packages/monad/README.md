@@ -1,26 +1,7 @@
+# Monad
 
+A value that implements the Monad specification must also implement
+the [Applicative](#applicative) and [Chain](#chain) specifications.
 
-touch /home/luxcium/100daysofcode/packages/setoid/README.md
-touch /home/luxcium/100daysofcode/packages/ord/README.md
-touch /home/luxcium/100daysofcode/packages/semigroupoid/README.md
-touch /home/luxcium/100daysofcode/packages/category/README.md
-touch /home/luxcium/100daysofcode/packages/semigroup/README.md
-touch /home/luxcium/100daysofcode/packages/monoid/README.md
-touch /home/luxcium/100daysofcode/packages/group/README.md
-touch /home/luxcium/100daysofcode/packages/filterable/README.md
-# touch /home/luxcium/100daysofcode/packages/functor/README.md
-touch /home/luxcium/100daysofcode/packages/contravariant/README.md
-touch /home/luxcium/100daysofcode/packages/apply/README.md
-touch /home/luxcium/100daysofcode/packages/applicative/README.md
-touch /home/luxcium/100daysofcode/packages/alt/README.md
-touch /home/luxcium/100daysofcode/packages/plus/README.md
-touch /home/luxcium/100daysofcode/packages/alternative/README.md
-touch /home/luxcium/100daysofcode/packages/foldable/README.md
-touch /home/luxcium/100daysofcode/packages/traversable/README.md
-touch /home/luxcium/100daysofcode/packages/chain/README.md
-touch /home/luxcium/100daysofcode/packages/chainrec/README.md
-# touch /home/luxcium/100daysofcode/packages/monad/README.md
-touch /home/luxcium/100daysofcode/packages/extend/README.md
-touch /home/luxcium/100daysofcode/packages/comonad/README.md
-touch /home/luxcium/100daysofcode/packages/bifunctor/README.md
-touch /home/luxcium/100daysofcode/packages/profunctor/README.md
+1. `M['fantasy-land/of'](a)['fantasy-land/chain'](f)` is equivalent to `f(a)` (left identity)
+2. `m['fantasy-land/chain'](M['fantasy-land/of'])` is equivalent to `m` (right identity)
