@@ -9,7 +9,7 @@
  */
 
 import { expect } from 'chai';
-import { FunctorSimplex } from '../functor-simplex';
+import { FunctorSimplex } from '../src/functor-simplex';
 
 /**
  * @link https://github.com/fantasyland/fantasy-land#functor
