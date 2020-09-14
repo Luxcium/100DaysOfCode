@@ -23,3 +23,13 @@ A value which has a Setoid must provide a `fantasy-land/equals` method. The
        unspecified (returning `false` is recommended).
 
 2. `fantasy-land/equals` must return a boolean (`true` or `false`).
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

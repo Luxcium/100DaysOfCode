@@ -26,3 +26,14 @@ A value which has an Ord must provide a `fantasy-land/lte` method. The
        unspecified (returning `false` is recommended).
 
 2. `fantasy-land/lte` must return a boolean (`true` or `false`).
+
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

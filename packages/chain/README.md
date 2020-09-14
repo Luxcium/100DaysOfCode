@@ -25,3 +25,13 @@ method takes one argument:
     2. `f` must return a value of the same Chain
 
 2. `fantasy-land/chain` must return a value of the same Chain
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

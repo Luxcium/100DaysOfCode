@@ -358,3 +358,34 @@
 
 # /home/luxcium/100daysofcode/packages/functor/
 # /home/luxcium/100daysofcode/packages/monad/
+
+
+
+"
+
+>\#100DaysOfCode
+
+\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n"
+
+
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/ord/README.md
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/semigroupoid/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/category/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/semigroup/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/monoid/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/group/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/filterable/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/contravariant/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/apply/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/applicative/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/alt/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/plus/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/alternative/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/foldable/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/traversable/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/chain/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/chainrec/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/extend/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/comonad/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/bifunctor/README.md &
+  echo -en ">\n\n\#100DaysOfCode\n---\n\n##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)\n\n###### Scientia is lux principium✨™\n" >> /home/luxcium/100daysofcode/packages/profunctor/README.md &

@@ -25,3 +25,13 @@ Given a value `m`, one can access its type representative via the
     m.constructor['fantasy-land/empty']()
 
 1. `fantasy-land/empty` must return a value of the same Monoid
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

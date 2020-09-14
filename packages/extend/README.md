@@ -25,3 +25,13 @@ method takes one argument:
     3. No parts of `f`'s return value should be checked.
 
 2. `fantasy-land/extend` must return a value of the same Extend.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

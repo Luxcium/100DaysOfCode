@@ -20,3 +20,13 @@ The `fantasy-land/extract` method takes no arguments:
 
 1. `fantasy-land/extract` must return a value of type `v`, for some variable `v` contained in `w`.
     1. `v` must have the same type that `f` returns in `fantasy-land/extend`.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

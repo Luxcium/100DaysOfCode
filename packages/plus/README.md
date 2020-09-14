@@ -26,3 +26,13 @@ Given a value `x`, one can access its type representative via the
     x.constructor['fantasy-land/zero']()
 
 1. `fantasy-land/zero` must return a value of the same Plus
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

@@ -34,3 +34,13 @@ Given a value `m`, one can access its type representative via the
         3. `value` is some value of the same type as `i`
     3. `f` must return a value of the same ChainRec which contains a value returned from either `done` or `next`
 2. `fantasy-land/chainRec` must return a value of the same ChainRec which contains a value of same type as argument of `done`
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

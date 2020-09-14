@@ -25,3 +25,13 @@ A value which has a Contravariant must provide a `fantasy-land/contramap` method
     3. No parts of `f`'s return value should be checked.
 
 2. `fantasy-land/contramap` must return a value of the same Contravariant
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

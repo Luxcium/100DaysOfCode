@@ -27,3 +27,13 @@ A value which has a Alt must provide a `fantasy-land/alt` method. The
     3. No parts of `a`'s and `b`'s containing value should be checked.
 
 2. `fantasy-land/alt` must return a value of the same Alt.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

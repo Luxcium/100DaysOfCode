@@ -21,3 +21,13 @@ A value which has a Semigroupoid must provide a `fantasy-land/compose` method. T
        unspecified.
 
 2. `fantasy-land/compose` must return a value of the same Semigroupoid.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

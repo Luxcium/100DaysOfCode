@@ -20,3 +20,13 @@ A value which has a Group must provide a `fantasy-land/invert` method. The
     g['fantasy-land/invert']()
 
 1. `fantasy-land/invert` must return a value of the same Group.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

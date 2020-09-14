@@ -25,3 +25,13 @@ Given a value `c`, one can access its type representative via the
     c.constructor['fantasy-land/id']()
 
 1. `fantasy-land/id` must return a value of the same Category
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

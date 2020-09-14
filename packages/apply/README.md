@@ -32,3 +32,13 @@ method takes one argument:
    1. No parts of return value of that function should be checked.
 
 4. The `Apply` returned by `fantasy-land/ap` must be the same as `a` and `b`
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

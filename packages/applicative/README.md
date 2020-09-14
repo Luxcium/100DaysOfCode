@@ -29,3 +29,13 @@ Given a value `f`, one can access its type representative via the
 1. `fantasy-land/of` must provide a value of the same Applicative
 
     1. No parts of `a` should be checked
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

@@ -21,3 +21,13 @@ A value which has a Semigroup must provide a `fantasy-land/concat` method. The
        unspecified.
 
 2. `fantasy-land/concat` must return a value of the same Semigroup.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

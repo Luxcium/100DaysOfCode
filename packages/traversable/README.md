@@ -54,3 +54,13 @@ method takes two arguments:
     2. `f` must return a value of the type represented by `A`.
 
 3. `fantasy-land/traverse` must return a value of the type represented by `A`.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

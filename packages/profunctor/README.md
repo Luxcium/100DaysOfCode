@@ -33,3 +33,13 @@ The `fantasy-land/promap` method takes two arguments:
     3. No parts of `g`'s return value should be checked.
 
 3. `fantasy-land/promap` must return a value of the same Profunctor
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

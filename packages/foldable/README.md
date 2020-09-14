@@ -25,3 +25,13 @@ method takes two arguments:
 1. `x` is the initial accumulator value for the reduction
 
     1. No parts of `x` should be checked.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™

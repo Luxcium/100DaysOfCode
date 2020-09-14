@@ -25,3 +25,13 @@ method takes one argument:
        the behaviour of `fantasy-land/filter` is unspecified.
 
 2. `fantasy-land/filter` must return a value of the same Filterable.
+
+
+>\#100DaysOfCode
+
+
+---
+
+##### Copyright © 2020 Benjamin Vincent Kasapoglu (Luxcium)
+
+###### Scientia is lux principium✨™
