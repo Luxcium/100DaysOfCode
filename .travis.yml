@@ -1,3 +1,7 @@
-language: node_js 12
+language: node_js
+node_js:
+  - 12
+cache: yarn
 os:
 - linux
+dist: xenial
