@@ -8,7 +8,7 @@
  * Scientia es lux principium✨ ™ - SEE THE BOTTOM OF THIS FILES FOR MORE INFO
  */
 
-import { IFMap, IFork } from '../types/functor';
+import { IFMap, IFork } from '../libs/functor';
 import { FunctorSimplex } from './functor-simplex';
 
 export class FunctorComplex<T = unknown>
