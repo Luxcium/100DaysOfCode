@@ -1,5 +1,6 @@
 # \#100DaysOfcode
 
+
 [![time tracker](https://wakatime.com/badge/github/Luxcium/100DaysOfCode.svg)](https://wakatime.com/badge/github/Luxcium/100DaysOfCode) [![Twitter Follow](https://img.shields.io/twitter/follow/Luxcium?label=Follow%20me&style=social)](https://twitter.com/Luxcium?ref_src=github001)
 
 ## My Goals
