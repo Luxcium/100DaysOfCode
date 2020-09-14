@@ -52,7 +52,7 @@ export class FunctorSimplex<T = unknown> implements IFMap<T> {
   }
 
   /**
-   *  Fantasy Land ―
+   *  Fantasy Land ― map
    * + `fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b`
    * + `fn` can return any value `R`.
    * + `fantasy-land/map` return value of the same Functor (FunctorSimplex<R>)
