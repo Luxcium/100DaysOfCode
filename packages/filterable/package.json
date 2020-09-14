@@ -1,0 +1,43 @@
+{
+  "name": "filterable",
+  "version": "1.0.0",
+  "description": "1. `v['fantasy-land/filter'](x => p(x) && q(x))` is equivalent to `v['fantasy-land/filter'](p)['fantasy-land/filter'](q)` (distributivity) 2. `v['fantasy-land/filter'](x => true)` is equivalent to `v` (identity) 3. `v['fantasy-land/filter'](x => false)` is equivalent to `w['fantasy-land/filter'](x => false)`    if `v` and `w` are values of the same Filterable (annihilation)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"No test script yet specified\" && exit 0",
+    "build": "echo \"No build script yet specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.10.1",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "eslint-formatter-git-log": "^0.5.3",
+    "eslint-formatter-github": "^1.0.11",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.5.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint-plugin-unicorn": "^21.0.0",
+    "prettier": "^2.1.1",
+    "prettier-eslint": "^11.0.0",
+    "ts-node": "^9.0.0",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
+  }
+}
