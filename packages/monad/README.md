@@ -1,5 +1,10 @@
 # Monad
 
+
+* Fantasy Land Specification Page: [Monad](https://github.com/fantasyland/fantasy-land/#monad)
+
+
+
 A value that implements the Monad specification must also implement
 the [Applicative](#applicative) and [Chain](#chain) specifications.
 

@@ -1,5 +1,10 @@
 # Comonad
 
+
+
+* Fantasy Land Specification Page: [Comonad](https://github.com/fantasyland/fantasy-land/#comonad)
+
+
 A value that implements the Comonad specification must also implement the [Extend](#extend) specification.
 
 1. `w['fantasy-land/extend'](_w => _w['fantasy-land/extract']())` is equivalent to `w` (left identity)

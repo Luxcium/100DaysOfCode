@@ -1,5 +1,10 @@
 # Traversable
 
+
+
+
+* Fantasy Land Specification Page: [Traversable](https://github.com/fantasyland/fantasy-land/#traversable)
+
 A value that implements the Traversable specification must also
 implement the [Functor](#functor) and [Foldable](#foldable) specifications.
 

@@ -1,5 +1,13 @@
 # Foldable
 
+
+
+* Fantasy Land Specification Page: [Foldable](https://github.com/fantasyland/fantasy-land/#foldable)
+
+
+
+
+
 1. `u['fantasy-land/reduce']` is equivalent to `u['fantasy-land/reduce']((acc, x) => acc.concat([x]), []).reduce`
 
 <a name="reduce-method"></a>

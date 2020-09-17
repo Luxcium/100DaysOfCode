@@ -1,5 +1,10 @@
 # Semigroup
 
+
+
+* Fantasy Land Specification Page: [Semigroupoid](https://github.com/fantasyland/fantasy-land/#semigroupoid)
+
+
 1. `a['fantasy-land/concat'](b)['fantasy-land/concat'](c)` is equivalent to `a['fantasy-land/concat'](b['fantasy-land/concat'](c))` (associativity)
 
 <a name="concat-method"></a>

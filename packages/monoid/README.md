@@ -1,5 +1,8 @@
 # Monoid
 
+* Fantasy Land Specification Page: [Monoid](https://github.com/fantasyland/fantasy-land/#monoid)
+
+
 A value that implements the Monoid specification must also implement
 the [Semigroup](#semigroup) specification.
 

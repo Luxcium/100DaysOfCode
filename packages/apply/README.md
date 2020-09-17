@@ -1,5 +1,8 @@
 # Apply
 
+* Fantasy Land Specification Page: [Apply](https://github.com/fantasyland/fantasy-land/#apply)
+
+
 A value that implements the Apply specification must also
 implement the [Functor](#functor) specification.
 

@@ -1,5 +1,9 @@
 # Alt
 
+* Fantasy Land Specification Page: [Alt](https://github.com/fantasyland/fantasy-land/#alt)
+
+
+
 A value that implements the Alt specification must also implement
 the [Functor](#functor) specification.
 

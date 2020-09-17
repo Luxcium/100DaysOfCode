@@ -1,5 +1,7 @@
 # Luxcium Functor
 
+* Fantasy Land Specification Page: [Functor](https://github.com/fantasyland/fantasy-land/#functor)
+
 
 ## FunctorSimplex
 

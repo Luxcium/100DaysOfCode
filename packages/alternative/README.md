@@ -1,5 +1,7 @@
 # Alternative
 
+* Fantasy Land Specification Page: [Alternative](https://github.com/fantasyland/fantasy-land/#alternative)
+
 A value that implements the Alternative specification must also implement
 the [Applicative](#applicative) and [Plus](#plus) specifications.
 

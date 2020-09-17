@@ -1,5 +1,8 @@
 # Category
 
+* Fantasy Land Specification Page: [Category](https://github.com/fantasyland/fantasy-land/#category)
+
+
 A value that implements the Category specification must also implement
 the [Semigroupoid](#semigroupoid) specification.
 

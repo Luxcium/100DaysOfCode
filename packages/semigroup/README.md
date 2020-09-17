@@ -1,5 +1,10 @@
 # Semigroupoid
 
+
+
+* Fantasy Land Specification Page: [Semigroup](https://github.com/fantasyland/fantasy-land/#semigroup)
+
+
 1. `a['fantasy-land/compose'](b)['fantasy-land/compose'](c) === a['fantasy-land/compose'](b['fantasy-land/compose'](c))` (associativity)
 
 <a name="compose-method"></a>

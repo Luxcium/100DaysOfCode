@@ -1,5 +1,8 @@
 # Setoid
 
+
+* Fantasy Land Specification Page: [Setoid](https://github.com/fantasyland/fantasy-land/#setoid)
+
 1. `a['fantasy-land/equals'](a) === true` (reflexivity)
 2. `a['fantasy-land/equals'](b) === b['fantasy-land/equals'](a)` (symmetry)
 3. If `a['fantasy-land/equals'](b)` and `b['fantasy-land/equals'](c)`, then `a['fantasy-land/equals'](c)` (transitivity)

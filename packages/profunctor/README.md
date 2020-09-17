@@ -1,5 +1,9 @@
 # Profunctor
 
+
+
+* Fantasy Land Specification Page: [Profunctor](https://github.com/fantasyland/fantasy-land/#profunctor)
+
 A value that implements the Profunctor specification must also implement
 the [Functor](#functor) specification.
 
