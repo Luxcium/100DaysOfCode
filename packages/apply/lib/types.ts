@@ -18,7 +18,5 @@ export type ApType<A = unknown> = <B = unknown>(
  */
 export interface IApply<A = unknown> extends FunctorComplex<A> {
   /** `Fantasy-land/ap :: Apply f => f a ~> f (a -> b) -> f b` */
-  // 'fantasy-land/ap': ApType<A>;
-  /** `ap :: Apply f => f a ~> f (a -> b) -> f b` */
   ap: ApType<A>;
 }
