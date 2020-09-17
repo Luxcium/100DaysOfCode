@@ -1,17 +1,26 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable @typescript-eslint/unbound-method */
+/* eslint-disable no-invalid-this */
 import { FunctorComplex, FunctorSimplex, IFMap, IFork } from 'functor';
-// fantasy-land/ap :: Apply f => f a ~> f (a -> b) -> f b
-export const FANTASY_LAND_APPLY = 'fantasy-land/ap';
-// export class Apply extends FunctorComplex {
-//   public ap: any;
-// }
-export { FunctorSimplex, FunctorComplex };
+import { IApply } from '../lib/types';
 
 export class Apply<T = unknown>
   extends FunctorComplex<T>
-  implements IFMap<T>, IFork<T>, FunctorSimplex<T>, FunctorComplex<T> {
+  implements
+    IApply<T>,
+    FunctorComplex<T>,
+    IFork<T>,
+    FunctorSimplex<T>,
+    IFMap<T> {
   public constructor(value: T) {
     super(value);
-    const functorComplex = {
+    const apply = {
+      'fantasy-land/ap': {
+        configurable: false,
+        enumerable: false,
+        value: this.ap,
+        writable: true,
+      },
       'fantasy-land/map': {
         configurable: false,
         enumerable: false,
@@ -19,32 +28,27 @@ export class Apply<T = unknown>
         writable: true,
       },
     };
-    return Object.defineProperties(this, functorComplex);
+    return Object.defineProperties(this, apply);
+  }
+  public 'fantasy-land/ap' = this.ap;
+  public ap<R = unknown>(apply: Apply<(val: T) => R>) {
+    if (typeof apply.value === 'function') {
+      // return new Apply<R>(fn(this.fork));
+      return new Apply<R>(apply.value(this.value));
+    }
+    throw new Error(
+      'If argument is not an Apply of a function, the behaviour of ap is unspecified',
+    );
   }
 
   public 'fantasy-land/map' = this.map;
-
-  public map<R = unknown>(fn: (val: T) => R): FunctorComplex<R> {
+  public map<R = unknown>(fn: (val: T) => R): Apply<R> {
     if (typeof fn === 'function') {
-      return new FunctorComplex<R>(fn(this.fork));
+      return new Apply<R>(fn(this.fork));
     }
     throw new Error(
       'If argument is not a function, the behaviour of map is unspecified',
     );
-  }
-
-  public get fork(): T {
-    return this.value;
-  }
-
-  /** Returns a string representation of a Functor or a Functor extended type. */
-  public toString(): string {
-    return JSON.stringify(this.fork);
-  }
-
-  /** Returns a value `T` 'representation' of a Functor or a Functor extended type. */
-  public toValue(): T {
-    return JSON.parse(this.toString());
   }
 }
 
