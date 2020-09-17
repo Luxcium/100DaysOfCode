@@ -22,8 +22,8 @@
     "@typescript-eslint",
     "filenames",
     "fp",
-    "lodash-fp",
-    "lodash",
+
+
     "node",
     "prettier",
     "ramda",
