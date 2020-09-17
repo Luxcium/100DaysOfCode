@@ -2,7 +2,7 @@
   "name": "group",
   "version": "1.0.0",
   "description": "A value that implements the Group specification must also implement the [Monoid](#monoid) specification.",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "lib": "lib"
   },

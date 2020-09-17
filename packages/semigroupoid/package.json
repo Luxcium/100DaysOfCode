@@ -2,7 +2,7 @@
   "name": "semigroupoid",
   "version": "1.0.0",
   "description": "1. `a['fantasy-land/concat'](b)['fantasy-land/concat'](c)` is equivalent to `a['fantasy-land/concat'](b['fantasy-land/concat'](c))` (associativity)",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "lib": "lib"
   },

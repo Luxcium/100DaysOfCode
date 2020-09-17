@@ -2,7 +2,7 @@
   "name": "comonad",
   "version": "1.0.0",
   "description": "A value that implements the Comonad specification must also implement the [Extend](#extend) specification.",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "lib": "lib"
   },

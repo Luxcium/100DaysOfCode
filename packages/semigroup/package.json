@@ -2,7 +2,7 @@
   "name": "semigroup",
   "version": "1.0.0",
   "description": "1. `a['fantasy-land/compose'](b)['fantasy-land/compose'](c) === a['fantasy-land/compose'](b['fantasy-land/compose'](c))` (associativity)",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "lib": "lib"
   },
