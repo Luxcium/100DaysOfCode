@@ -8,7 +8,7 @@
  * Scientia es lux principium✨ ™ - SEE THE BOTTOM OF THIS FILES FOR MORE INFO
  */
 
-import { IFMap } from '../libs/functor';
+import { IFMap } from '../libs/types';
 
 /**
  * ##### Functor
