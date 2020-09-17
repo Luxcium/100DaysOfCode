@@ -24,10 +24,6 @@ export interface IFork<A = unknown> {
   readonly fork: A;
 }
 
-/** A complex Functor must extend simple Functor and fork */
-
-// export function testing() {
-
 /*
 ================================================================================≈
 † LUXCIUM‡ LICENSE — *NO* PERMISSION GRANTED — PROVIDED "AS IS" WITHOUT WARRANTY
