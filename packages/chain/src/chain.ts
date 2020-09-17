@@ -1,8 +1,16 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable no-invalid-this */
 /* eslint-disable @typescript-eslint/unbound-method */
 import { Apply, IApply } from 'apply';
 import { FunctorComplex, FunctorSimplex, IFMap, IFork } from 'functor';
 
+export type ApplyUtil<T> = <Ap extends IApply<T>>(apply: Ap) => Ap;
+export const someThing: ApplyUtil<number> = ap => ap;
+someThing(Chain);
+//  public ap<R = unknown>(apply: ApChain<T,R>) {
+// return void new Chain<R>(apply.value(this.value));
+// export type ApplyType<Ap,T,R> = Ap<(val: T) => R>
+export type ApChain<T, R> = Chain<(val: T) => R>;
 export class Chain<T = unknown>
   extends FunctorComplex<T>
   implements
@@ -15,16 +23,16 @@ export class Chain<T = unknown>
   public constructor(value: T) {
     super(value);
     const apply = {
-      'fantasy-land/chain': {
-        configurable: false,
-        enumerable: false,
-        value: this.chain,
-        writable: true,
-      },
       'fantasy-land/ap': {
         configurable: false,
         enumerable: false,
         value: this.ap,
+        writable: true,
+      },
+      'fantasy-land/chain': {
+        configurable: false,
+        enumerable: false,
+        value: this.chain,
         writable: true,
       },
       'fantasy-land/map': {
@@ -38,6 +46,7 @@ export class Chain<T = unknown>
   }
 
   public 'fantasy-land/chain' = this.chain;
+
   // fantasy-land/chain :: Chain m => m a ~> (a -> m b) -> m b
   public chain<R = unknown>(apply: Chain<(val: T) => R>) {
     if (typeof apply.value === 'function') {
@@ -49,7 +58,8 @@ export class Chain<T = unknown>
   }
 
   public 'fantasy-land/ap' = this.ap;
-  public ap<R = unknown>(apply: Chain<(val: T) => R>) {
+
+  public ap<R = unknown>(apply: ApChain<T, R>) {
     if (typeof apply.value === 'function') {
       // return new Apply<R>(fn(this.fork));
       return new Chain<R>(apply.value(this.value));
