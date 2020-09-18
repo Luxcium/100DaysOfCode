@@ -1,5 +1,10 @@
 # Group
 
+
+* Fantasy Land Specification Page: [Group](https://github.com/fantasyland/fantasy-land/#group)
+
+
+
 A value that implements the Group specification must also implement
 the [Monoid](#monoid) specification.
 

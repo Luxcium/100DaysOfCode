@@ -1,5 +1,8 @@
 # Bifunctor
 
+* Fantasy Land Specification Page: [Bifunctor](https://github.com/fantasyland/fantasy-land/#bifunctor)
+
+
 A value that implements the Bifunctor specification must also implement
 the [Functor](#functor) specification.
 

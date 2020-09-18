@@ -1,5 +1,11 @@
 # Extend
 
+
+
+* Fantasy Land Specification Page: [Extend](https://github.com/fantasyland/fantasy-land/#extend)
+
+
+
 A value that implements the Extend specification must also implement the [Functor](#functor) specification.
 
 1. `w['fantasy-land/extend'](g)['fantasy-land/extend'](f)` is equivalent to `w['fantasy-land/extend'](_w => f(_w['fantasy-land/extend'](g)))`

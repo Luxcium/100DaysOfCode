@@ -1,5 +1,8 @@
 # ChainRec
 
+* Fantasy Land Specification Page: [ChainRec](https://github.com/fantasyland/fantasy-land/#chainrec)
+
+
 A value that implements the ChainRec specification must also implement the [Chain](#chain) specification.
 
 1. `M['fantasy-land/chainRec']((next, done, v) => p(v) ? d(v)['fantasy-land/map'](done) : n(v)['fantasy-land/map'](next), i)`

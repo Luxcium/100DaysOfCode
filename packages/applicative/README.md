@@ -1,5 +1,7 @@
 # Applicative
 
+* Fantasy Land Specification Page: [Applicative](https://github.com/fantasyland/fantasy-land/#applicative)
+
 A value that implements the Applicative specification must also
 implement the [Apply](#apply) specification.
 

@@ -1,5 +1,8 @@
 # Ord
 
+
+* Fantasy Land Specification Page: [Ord](https://github.com/fantasyland/fantasy-land/#ord)
+
 A value that implements the Ord specification must also implement
 the [Setoid](#setoid) specification.
 

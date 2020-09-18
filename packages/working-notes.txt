@@ -1,359 +1,359 @@
 (
   cd /home/luxcium/100daysofcode/packages/ord/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/semigroupoid/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/category/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/semigroup/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/monoid/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/group/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/filterable/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/contravariant/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/apply/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/applicative/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/alt/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/plus/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/alternative/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/foldable/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/traversable/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/chain/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/chainrec/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/extend/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/comonad/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/bifunctor/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 (
   cd /home/luxcium/100daysofcode/packages/profunctor/
-  cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
-  cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
-  cp /home/luxcium/100daysofcode/.travis.yml . &
-  cp /home/luxcium/100daysofcode/.prettierrc . &
-  cp /home/luxcium/100daysofcode/.prettierignore . &
-  cp /home/luxcium/100daysofcode/.eslintrc.json . &
-  cp /home/luxcium/100daysofcode/.eslintignore . &
-  cp /home/luxcium/100daysofcode/.gitignore . &
-  mkdir specs &
-  mkdir src &
-  mkdir lib &
-  npm init -y
-  yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
+  # cp /home/luxcium/100daysofcode/packages/setoid/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/tsconfig.json . &
+  # cp /home/luxcium/100daysofcode/packages/functor/LICENSE . &
+  # cp /home/luxcium/100daysofcode/.travis.yml . &
+  # cp /home/luxcium/100daysofcode/.prettierrc . &
+  # cp /home/luxcium/100daysofcode/.prettierignore . &
+  # cp /home/luxcium/100daysofcode/.eslintrc.json . &
+  # cp /home/luxcium/100daysofcode/.eslintignore . &
+  # cp /home/luxcium/100daysofcode/.gitignore . &
+  (mkdir specs && touch ./specs/test.ts)&
+  (mkdir src && touch ./src/index.ts)&
+  (mkdir lib && touch ./lib/types.ts)&
+  # npm init -y
+  # yarn add -D @types/node@latest tslib@latest typescript@latest ts-node@latest prettier@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest eslint-formatter-git-log@latest eslint-formatter-github@latest eslint-plugin-filenames@latest eslint-plugin-fp@latest eslint-plugin-import@latest eslint-plugin-jsdoc@latest eslint-plugin-jsx-a11y@latest eslint-plugin-node@latest eslint-plugin-prettier@latest eslint-plugin-ramda@latest eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plugin-security@latest eslint-plugin-simple-import-sort@latest eslint-plugin-sort-keys-fix@latest eslint-plugin-unicorn@latest prettier-eslint@latest
 ) &
 
 # /home/luxcium/100daysofcode/packages/functor/

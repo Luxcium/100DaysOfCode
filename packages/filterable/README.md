@@ -1,5 +1,10 @@
 # Filterable
 
+
+
+* Fantasy Land Specification Page: [Filterable](https://github.com/fantasyland/fantasy-land/#filterable)
+
+
 1. `v['fantasy-land/filter'](x => p(x) && q(x))` is equivalent to `v['fantasy-land/filter'](p)['fantasy-land/filter'](q)` (distributivity)
 2. `v['fantasy-land/filter'](x => true)` is equivalent to `v` (identity)
 3. `v['fantasy-land/filter'](x => false)` is equivalent to `w['fantasy-land/filter'](x => false)`

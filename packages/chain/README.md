@@ -1,5 +1,9 @@
 # Chain
 
+
+* Fantasy Land Specification Page: [Chain](https://github.com/fantasyland/fantasy-land/#chain)
+
+
 A value that implements the Chain specification must also
 implement the [Apply](#apply) specification.
 

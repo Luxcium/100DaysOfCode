@@ -1,5 +1,10 @@
 # Contravariant
 
+
+
+* Fantasy Land Specification Page: [Contravariant](https://github.com/fantasyland/fantasy-land/#contravariant)
+
+
 1. `u['fantasy-land/contramap'](a => a)` is equivalent to `u` (identity)
 2. `u['fantasy-land/contramap'](x => f(g(x)))` is equivalent to `u['fantasy-land/contramap'](f)['fantasy-land/contramap'](g)`
 (composition)

@@ -27,10 +27,7 @@ Created 24 sub packages to build complient version of [Fantasy Land Specificatio
 - [Bifunctor](../../packages/bifunctor)
 - [Profunctor](../../packages/profunctor)
 
-
-
->\#100DaysOfCode
-
+> \#100DaysOfCode
 
 ---
 

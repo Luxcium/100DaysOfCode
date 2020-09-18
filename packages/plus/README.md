@@ -1,5 +1,9 @@
 # Plus
 
+
+
+* Fantasy Land Specification Page: [Plus](https://github.com/fantasyland/fantasy-land/#plus)
+
 A value that implements the Plus specification must also implement
 the [Alt](#alt) specification.
 

@@ -9,7 +9,7 @@
  */
 
 /** A Map takes any value A and morph it into any value B */
-export type MapType<A = unknown> = (fn: <B = unknown>(val: A) => B) => IFMap;
+export type MapType<A = unknown> = <B = unknown>(fn: (val: A) => B) => IFMap<B>;
 /**
  * Anything that implement a Map must implement
  * a method of the form map: MapType<A>
@@ -23,10 +23,6 @@ export interface IFork<A = unknown> {
   /** Return the internal value `T` of a Functor or type extending Functor */
   readonly fork: A;
 }
-
-/** A complex Functor must extend simple Functor and fork */
-
-// export function testing() {
 
 /*
 ================================================================================≈
