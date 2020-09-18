@@ -4,35 +4,46 @@
 import { Apply, IApply } from 'apply';
 import { FunctorComplex, FunctorSimplex, IFMap, IFork } from 'functor';
 
-export type ApplyUtil<T> = <Ap extends IApply<T>>(apply: Ap) => Ap;
-export const someThing: ApplyUtil<number> = ap => ap;
-someThing(Chain);
-//  public ap<R = unknown>(apply: ApChain<T,R>) {
-// return void new Chain<R>(apply.value(this.value));
-// export type ApplyType<Ap,T,R> = Ap<(val: T) => R>
+export interface IChain<A = any> extends Apply<A> {
+  /** fantasy-land/chain :: Chain m => m A ~> (A -> m B) -> m B */
+  chain: ChainType<A>;
+}
+export type ChainType<A = any> = <B = any>(
+  fn: (val: A) => IChain<B>,
+) => IChain<B>;
+
+// type ChainType<A> = A;
+// export interface IChain<A = unknown> extends FunctorComplex<A> {
+//   /** `Fantasy-land/ap :: Apply f => f a ~> f (a -> b) -> f b` */
+//   'fantasy-land/chain': ChainType<A>;
+//   /** `Fantasy-land/ap :: Apply f => f a ~> f (a -> b) -> f b` */
+//   ap: ChainType<A>;
+// }
+
 export type ApChain<T, R> = Chain<(val: T) => R>;
 export class Chain<T = unknown>
   extends FunctorComplex<T>
   implements
-    IApply<T>,
+    IChain<T>,
     Apply<T>,
-    IFork<T>,
+    IApply<T>,
     FunctorComplex<T>,
-    IFMap<T>,
-    FunctorSimplex<T> {
+    IFork<T>,
+    FunctorSimplex<T>,
+    IFMap<T> {
   public constructor(value: T) {
     super(value);
     const apply = {
-      'fantasy-land/ap': {
-        configurable: false,
-        enumerable: false,
-        value: this.ap,
-        writable: true,
-      },
       'fantasy-land/chain': {
         configurable: false,
         enumerable: false,
         value: this.chain,
+        writable: true,
+      },
+      'fantasy-land/ap': {
+        configurable: false,
+        enumerable: false,
+        value: this.ap,
         writable: true,
       },
       'fantasy-land/map': {
@@ -46,23 +57,20 @@ export class Chain<T = unknown>
   }
 
   public 'fantasy-land/chain' = this.chain;
-
-  // fantasy-land/chain :: Chain m => m a ~> (a -> m b) -> m b
-  public chain<R = unknown>(apply: Chain<(val: T) => R>) {
-    if (typeof apply.value === 'function') {
-      return void new Chain<R>(apply.value(this.value));
+  public chain<R = any>(fn: (val: T) => IChain<R>): Chain<R> {
+    if (typeof fn === 'function') {
+      return new Chain<R>(fn(this.value).fork);
     }
     throw new Error(
-      'If argument is not an Apply of a function, the behaviour of ap is unspecified',
+      'If argument is not a function, the behaviour of chain is unspecified',
     );
   }
 
   public 'fantasy-land/ap' = this.ap;
-
-  public ap<R = unknown>(apply: ApChain<T, R>) {
-    if (typeof apply.value === 'function') {
+  public ap<R = unknown>(apply: IApply<(val: T) => R>) {
+    if (typeof apply.fork === 'function') {
       // return new Apply<R>(fn(this.fork));
-      return new Chain<R>(apply.value(this.value));
+      return new Chain<R>(apply.fork(this.value));
     }
     throw new Error(
       'If argument is not an Apply of a function, the behaviour of ap is unspecified',
@@ -92,13 +100,57 @@ m['fantasy-land/chain'](f)['fantasy-land/chain'](g) is equivalent to m['fantasy-
 fantasy-land/chain method
 fantasy-land/chain :: Chain m => m a ~> (a -> m b) -> m b
 A value which has a Chain must provide a fantasy-land/chain method. The fantasy-land/chain method takes one argument:
-
+fantasy-land/chain ::
+Chain m => m a ~> (a -> m b) -> m b
+f => f a ~> f (a -> b) -> f b
 m['fantasy-land/chain'](f)
 f must be a function which returns a value
 
 If f is not a function, the behaviour of fantasy-land/chain is unspecified.
 f must return a value of the same Chain
 fantasy-land/chain must return a value of the same Chain
+  // public ===================================================-| chain() |-====
+  public [Fantasy.chain] = this.chain;
+
+  public chain<R>(fn: (val: T[]) => IMonad<R>): IMonad<R> {
+    return super.chain(fn);
+  }
+
+  // public ==================================================-| fChain() |-====
+  public fChain<R = any>(
+    fn: (val: T, index: number, array: T[]) => MaybeList<R>,
+  ): MaybeList<R> {
+    return MaybeList.of(
+      ...this.chain<R[]>(values =>
+        Monad.of(
+          values.map((value: T, index: number, array: T[]) =>
+            fn(value, index, array),
+          ),
+        ),
+      ).fork,
+    );
+  }
+
+  // public ===============================================-| flatChain() |-====
+  public flatChain<R = any>(
+    fn: (val: T, index: number, array: T[]) => R,
+  ): MaybeList<R> {
+    return MaybeList.of(
+      ...this.chain<R[]>(values => Monad.of(values.flatMap(fn))).fork,
+    );
+  }
+
+  / **
+   * fantasy-land/chain :: Chain m => m T ~> (a -> m R) -> m R
+   *
+   * @param fn
+   * /
+  public chain<R = any>(fn: (val: T) => IChain<R>): IChain<R> {
+    return new Chain(
+      this.map(x => fn(x)).fork
+    )
+  }
+
 
 
 

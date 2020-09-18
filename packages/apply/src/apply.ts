@@ -4,6 +4,30 @@
 import { FunctorComplex, FunctorSimplex, IFMap, IFork } from 'functor';
 import { IApply } from '../lib/types';
 
+// #region https://curiosity-driven.org/monads-in-javascript
+// export interface M<T> {
+
+// }
+
+// export function unit<T>(value: T): M<T> {
+//     // ...
+
+// }
+
+// export function bind<T, U>(instance: M<T>, transform: (value: T) => M<U>): M<U> {
+//     // ...
+// }
+
+// interface MStatic<T> {
+//     // constructor that wraps value
+//     new(value: T): M<T>;
+// }
+
+// interface M<T> {
+//     // bind as an instance method
+//     bind<U>(transform: (value: T) => M<U>): M<U>;
+// }
+// #endregion https://curiosity-driven.org/monads-in-javascript
 export class Apply<T = unknown>
   extends FunctorComplex<T>
   implements
@@ -31,10 +55,9 @@ export class Apply<T = unknown>
     return Object.defineProperties(this, apply);
   }
   public 'fantasy-land/ap' = this.ap;
-  public ap<R = unknown>(apply: Apply<(val: T) => R>) {
-    if (typeof apply.value === 'function') {
-      // return new Apply<R>(fn(this.fork));
-      return new Apply<R>(apply.value(this.value));
+  public ap<R = unknown>(apply: IApply<(val: T) => R>) {
+    if (typeof apply.fork === 'function') {
+      return new Apply<R>(apply.fork(this.value));
     }
     throw new Error(
       'If argument is not an Apply of a function, the behaviour of ap is unspecified',
