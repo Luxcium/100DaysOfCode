@@ -8,16 +8,23 @@
  * Scientia es lux principium✨ ™ - SEE THE BOTTOM OF THIS FILES FOR MORE INFO
  */
 
+
+export interface IFunctor<T= unknown> {
+  map: MapType<T>;
+}
+
 /** A Map takes any value A and morph it into any value B */
-export type MapType<A = unknown> = <B = unknown>(fn: (val: A) => B) => IFMap<B>;
+// fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b
+export type MapType<A = unknown> = <B = unknown>(fn: (val: A) => B) => IFunctor<B>;
 /**
  * Anything that implement a Map must implement
  * a method of the form map: MapType<A>
  */
-export interface IFMap<A = unknown> {
-  /** `fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b` */
-  map: MapType<A>;
-}
+export type  IFMap<T> = IFunctor<T>
+// <A = unknown > {
+//   /** `fantasy-land/map :: Functor f => f a ~> (a -> b) -> f b` */
+//   map: MapType<A>;
+// }
 
 export interface IFork<A = unknown> {
   /** Return the internal value `T` of a Functor or type extending Functor */
