@@ -8,10 +8,26 @@ export interface IChain<A = any> extends Apply<A> {
   /** fantasy-land/chain :: Chain m => m A ~> (A -> m B) -> m B */
   chain: ChainType<A>;
 }
-export type ChainType<A = any> = <B = any>(
-  fn: (val: A) => IChain<B>,
+export type ChainType<A = unknown> = <B = unknown>(
+  // fn: (A -> m B)
+  fn: fnChain<A, B>,
+  //  m B
 ) => IChain<B>;
 
+export type fnChain<A, B> =  (val: A) => IChain<B>
+
+
+/*
+"is a member of"
+  fantasy-land/chain "is a member of the type"  °Chain m => m A ~> (A -> m B) -> m B°
+
+  fantasy-land/chain  ::            Chain m           =>  m A  ~>      (A -> m B)      ->
+'-------------------'    '--------------------------'     '-'     '-------------------'    '-----'
+ '                        '                                '      '                        '
+ '                        ' - type constraints             '      ' - argument types       ' - return type
+ '                                                         '
+ '- method name                                            ' - method target type
+ */
 // type ChainType<A> = A;
 // export interface IChain<A = unknown> extends FunctorComplex<A> {
 //   /** `Fantasy-land/ap :: Apply f => f a ~> f (a -> b) -> f b` */
@@ -20,7 +36,6 @@ export type ChainType<A = any> = <B = any>(
 //   ap: ChainType<A>;
 // }
 
-export type ApChain<T, R> = Chain<(val: T) => R>;
 export class Chain<T = unknown>
   extends FunctorComplex<T>
   implements
@@ -69,13 +84,12 @@ export class Chain<T = unknown>
   public 'fantasy-land/ap' = this.ap;
   public ap<R = unknown>(apply: IApply<(val: T) => R>) {
     if (typeof apply.fork === 'function') {
-      // return new Apply<R>(fn(this.fork));
       return new Chain<R>(apply.fork(this.value));
     }
     throw new Error(
       'If argument is not an Apply of a function, the behaviour of ap is unspecified',
     );
-  }
+      }
 
   public 'fantasy-land/map' = this.map;
 
