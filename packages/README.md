@@ -1,10 +1,17 @@
 # Fantasy Land Specification
 
-[![Build Status](https://travis-ci.org/fantasyland/fantasy-land.svg?branch=master)](https://travis-ci.org/fantasyland/fantasy-land) [![Join the chat at https://gitter.im/fantasyland/fantasy-land](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fantasyland/fantasy-land?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 (aka "Algebraic JavaScript Specification")
 
-<img src="logo.png" width="200" height="200" />
+## Monorepo
+
+As part of my #100DaysOfCode experience, I wanted to learn how to manage a mono repo and publish many NPM packages from the same repo using Git-repository management, a powerful continuous integration/continuous deployment (CI/CD) pipeline, and rigorous testing before publishing!
+
+### Luxcium TypeScript implementation of Fantasy Land Specification
+
+In order to add to the chalenge I want to implement the 24 algebraic
+structures of the [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land) in 24 modular npm package the structures defined below are from the readme page of [Fantasy Land](https://github.com/fantasyland/fantasy-land/blob/master/README.md)
+
+---
 
 This project specifies interoperability of common algebraic
 structures:
@@ -34,7 +41,7 @@ structures:
 * [Bifunctor](#bifunctor)
 * [Profunctor](#profunctor)
 
-<img src="figures/dependencies.png" width="888" height="234" />
+<img src="https://github.com/fantasyland/fantasy-land/blob/master/figures/dependencies.png" width="888" height="234" />
 
 ## General
 

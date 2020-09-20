@@ -1,5 +1,6 @@
 # seventh-day
 
+
 ## Working with Chai.js
 
 I am in the second day folder working with my Functor(s) types on the 18th day of the \#100DaysOfCode (_catching up_)
