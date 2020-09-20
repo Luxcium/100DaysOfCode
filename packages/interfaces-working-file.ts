@@ -87,7 +87,7 @@ export interface IBifunctor<T, U> extends IFunctor<T> {
 export type BimapType<A, C> = <B, D>(
   fn1: (val: A) => B,
   fn2: (val: C) => D,
-) => IProfunctor<B, D>;
+) => IBifunctor<B, D>;
 export interface IProfunctor<T, U> extends IFunctor<T> {
   promap: PromapType<T, U>;
 }
