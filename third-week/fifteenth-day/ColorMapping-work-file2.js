@@ -522,3 +522,269 @@ const dark02 = [
 
 
  */
+
+
+/*
+"activityBar.dropBackground" :"|Dark 01|" ,// (1f),
+"activityBar.foreground" :"|Dark 01|",
+"activityBar.inactiveForeground" :"|Dark 01|" ,// (99),
+"activityBarBadge.foreground" :"|Dark 01|",
+"badge.foreground" :"|Dark 01|",
+"button.foreground" :"|Dark 01|",
+"editor.rangeHighlightBackground" :"|Dark 01|" ,// (0b),
+"extensionBadge.remoteForeground" :"|Dark 01|",
+"extensionButton.prominentForeground" :"|Dark 01|",
+"list.activeSelectionForeground" :"|Dark 01|",
+"menu.selectionForeground" :"|Dark 01|",
+"menubar.selectionBackground" :"|Dark 01|" ,// (1a),
+"panel.dropBackground" :"|Dark 01|" ,// (1f),
+"peekViewResult.fileForeground" :"|Dark 01|",
+"peekViewResult.selectionForeground" :"|Dark 01|",
+"peekViewTitleLabel.foreground" :"|Dark 01|",
+"sideBar.dropBackground" :"|Dark 01|" ,// (1f),
+"statusBar.debuggingForeground" :"|Dark 01|",
+"statusBar.foreground" :"|Dark 01|",
+"statusBar.noFolderForeground" :"|Dark 01|",
+"statusBarItem.activeBackground" :"|Dark 01|" ,// (2e),
+"statusBarItem.hoverBackground" :"|Dark 01|" ,// (1f),
+"statusBarItem.prominentForeground" :"|Dark 01|",
+"statusBarItem.remoteForeground" :"|Dark 01|",
+"tab.activeForeground" :"|Dark 01|",
+"tab.inactiveForeground" :"|Dark 01|" ,// (80),
+"tab.unfocusedActiveForeground" :"|Dark 01|" ,// (80),
+"tab.unfocusedInactiveForeground" :"|Dark 01|" ,// (40),
+"terminal.selectionBackground" :"|Dark 01|" ,// (40),
+"textSeparator.foreground" :"|Dark 01|" ,// (2e),
+
+"checkbox.foreground" :"|Dark 02|",
+"dropdown.foreground" :"|Dark 02|",
+"settings.checkboxForeground" :"|Dark 02|",
+"settings.dropdownForeground" :"|Dark 02|",
+
+"panelTitle.activeForeground" :"|Dark 03|",
+"panelTitle.inactiveForeground" :"|Dark 03|" ,// (99),
+"settings.headerForeground" :"|Dark 03|",
+
+"terminal.ansiBrightWhite" :"|Dark 04|",
+"terminal.ansiWhite" :"|Dark 04|",
+
+"editor.foreground" :"|Dark 05|",
+"editorSuggestWidget.foreground" :"|Dark 05|",
+"foreground" :"|Dark 05|",
+
+"breadcrumb.foreground" :"|Dark 06|" ,// (cc),
+"descriptionForeground" :"|Dark 06|" ,// (b3),
+"editorWidget.foreground" :"|Dark 06|",
+"foreground" :"|Dark 06|",
+"input.foreground" :"|Dark 06|",
+"menu.foreground" :"|Dark 06|",
+"menubar.selectionForeground" :"|Dark 06|",
+"notifications.foreground" :"|Dark 06|",
+"peekViewTitleDescription.foreground" :"|Dark 06|" ,// (b3),
+"settings.numberInputForeground" :"|Dark 06|",
+"settings.textInputForeground" :"|Dark 06|",
+"terminal.foreground" :"|Dark 06|",
+"titleBar.activeForeground" :"|Dark 06|",
+"titleBar.inactiveForeground" :"|Dark 06|" ,// (99),
+
+"editorActiveLineNumber.foreground" :"|Dark 07|",
+"editorLineNumber.activeForeground" :"|Dark 07|",
+
+"menu.separatorBackground" :"|Dark 08|",
+"peekViewResult.lineForeground" :"|Dark 08|",
+"sideBarTitle.foreground" :"|Dark 08|",
+
+"editorOverviewRuler.bracketMatchForeground" :"|Dark 09|",
+"editorOverviewRuler.selectionHighlightForeground" :"|Dark 09|" ,// (cc),
+"editorOverviewRuler.wordHighlightForeground" :"|Dark 09|" ,// (cc),
+
+"imagePreview.border" :"|Dark 10|" ,// (59),
+"panel.border" :"|Dark 10|" ,// (59),
+"panelTitle.activeBorder" :"|Dark 10|" ,// (59),
+"sideBarSectionHeader.background" :"|Dark 10|" ,// (33),
+"terminal.border" :"|Dark 10|" ,// (59),
+
+"editorOverviewRuler.border" :"|Dark 11|" ,// (4d),
+"textBlockQuote.background" :"|Dark 11|" ,// (1a),
+
+"editorOverviewRuler.commonContentForeground" :"|Dark 12|" ,// (66),
+"merge.commonContentBackground" :"|Dark 12|" ,// (29),
+"merge.commonHeaderBackground" :"|Dark 12|" ,// (66),
+
+"editorHoverWidget.border" :"|Dark 13|",
+"editorSuggestWidget.border" :"|Dark 13|",
+"editorWidget.border" :"|Dark 13|",
+"settings.dropdownListBorder" :"|Dark 13|",
+
+"checkbox.background" :"|Dark 14|",
+"checkbox.border" :"|Dark 14|",
+"dropdown.background" :"|Dark 14|",
+"dropdown.border" :"|Dark 14|",
+"input.background" :"|Dark 14|",
+"settings.checkboxBackground" :"|Dark 14|",
+"settings.checkboxBorder" :"|Dark 14|",
+"settings.dropdownBackground" :"|Dark 14|",
+"settings.dropdownBorder" :"|Dark 14|",
+"titleBar.activeBackground" :"|Dark 14|",
+"titleBar.inactiveBackground" :"|Dark 14|" ,// (99),
+
+"editor.findRangeHighlightBackground" :"|Dark 15|" ,// (66),
+"editor.inactiveSelectionBackground" :"|Dark 15|",
+
+"activityBar.background" :"|Dark 16|",
+"debugToolBar.background" :"|Dark 16|",
+
+"notificationCenterHeader.background" :"|Dark 17|",
+"notifications.border" :"|Dark 17|",
+
+"settings.numberInputBackground" :"|Dark 18|",
+"settings.textInputBackground" :"|Dark 18|",
+
+"breadcrumbPicker.background" :"|Dark 19|",
+"editorGroupHeader.tabsBackground" :"|Dark 19|",
+"editorHoverWidget.background" :"|Dark 19|",
+"editorSuggestWidget.background" :"|Dark 19|",
+"editorWidget.background" :"|Dark 19|",
+"menu.background" :"|Dark 19|",
+"notifications.background" :"|Dark 19|",
+"peekViewResult.background" :"|Dark 19|",
+"quickInput.background" :"|Dark 19|",
+"sideBar.background" :"|Dark 19|",
+"tab.border" :"|Dark 19|",
+
+"breadcrumb.background" :"|Dark 20|",
+"editor.background" :"|Dark 20|",
+"editorGroupHeader.noTabsBackground" :"|Dark 20|",
+"editorGutter.background" :"|Dark 20|",
+"editorPane.background" :"|Dark 20|",
+"panel.background" :"|Dark 20|",
+"peekViewTitle.background" :"|Dark 20|",
+"tab.activeBackground" :"|Dark 20|",
+"tab.unfocusedActiveBackground" :"|Dark 20|",
+"terminal.background" :"|Dark 20|",
+
+"editorUnnecessaryCode.opacity" :"|Dark 21|" ,// (aa),
+"listFilterWidget.outline" :"|Dark 21|" ,// (00),
+"scrollbar.shadow" :"|Dark 21|",
+"statusBarItem.prominentBackground" :"|Dark 21|" ,// (80),
+"statusBarItem.prominentHoverBackground" :"|Dark 21|" ,// (4d),
+"terminal.ansiBlack" :"|Dark 21|",
+"widget.shadow" :"|Dark 21|",
+
+"editorInfo.foreground" :"|Blue 01|",
+"editorMarkerNavigationInfo.background" :"|Blue 01|",
+"editorOverviewRuler.infoForeground" :"|Blue 01|",
+
+"editorOverviewRuler.incomingContentForeground" :"|Blue 02|" ,// (80),
+"merge.incomingContentBackground" :"|Blue 02|" ,// (33),
+"merge.incomingHeaderBackground" :"|Blue 02|" ,// (80),
+
+"notificationLink.foreground" :"|Blue 03|",
+"pickerGroup.foreground" :"|Blue 03|",
+"textLink.activeForeground" :"|Blue 03|",
+"textLink.foreground" :"|Blue 03|",
+
+"editor.hoverHighlightBackground" :"|Blue 04|" ,// (40),
+"editor.selectionBackground" :"|Blue 04|",
+
+"tab.activeModifiedBorder" :"|Blue 05|",
+"tab.inactiveModifiedBorder" :"|Blue 05|" ,// (80),
+"tab.unfocusedActiveModifiedBorder" :"|Blue 05|" ,// (80),
+"tab.unfocusedInactiveModifiedBorder" :"|Blue 05|" ,// (40),
+
+"editorSuggestWidget.highlightForeground" :"|Blue 06|",
+"list.highlightForeground" :"|Blue 06|",
+
+"activityBarBadge.background" :"|Blue 07|",
+"editorOverviewRuler.addedForeground" :"|Blue 07|" ,// (99),
+"editorOverviewRuler.deletedForeground" :"|Blue 07|" ,// (99),
+"editorOverviewRuler.modifiedForeground" :"|Blue 07|" ,// (99),
+"editorOverviewRuler.rangeHighlightForeground" :"|Blue 07|" ,// (99),
+"extensionBadge.remoteBackground" :"|Blue 07|",
+"inputOption.activeBorder" :"|Blue 07|" ,// (00),
+"inputValidation.infoBorder" :"|Blue 07|",
+"peekView.border" :"|Blue 07|",
+"statusBar.background" :"|Blue 07|",
+"textBlockQuote.border" :"|Blue 07|" ,// (80),
+
+"button.background" :"|Blue 08|",
+"focusBorder" :"|Blue 08|" ,// (cc),
+"inputOption.activeBackground" :"|Blue 08|" ,// (66),
+
+"list.activeSelectionBackground" :"|Blue 09|",
+"menu.selectionBackground" :"|Blue 09|",
+
+"editorSuggestWidget.selectedBackground" :"|Blue 10|",
+"list.focusBackground" :"|Blue 10|",
+
+"peekViewEditor.background" :"|Blue 11|",
+"peekViewEditorGutter.background" :"|Blue 11|",
+
+"editorInfo.foreground" :"|Red 01|",
+"editorLightBulbAutoFix.foreground" :"|Red 01|",
+"editorMarkerNavigationInfo.background" :"|Red 01|",
+"editorOverviewRuler.infoForeground" :"|Red 01|",
+"notificationsInfoIcon.foreground" :"|Red 01|",
+
+"editorOverviewRuler.incomingContentForeground" :"|Red 02|" ,// (80),
+"incomingContentBackground" :"|Red 02|" ,// (33),
+"incomingHeaderBackground" :"|Red 02|" ,// (80),
+
+"notificationLink.foreground" :"|Red 03|",
+"pickerGroup.foreground" :"|Red 03|",
+"textLink.activeForeground" :"|Red 03|",
+"textLink.foreground" :"|Red 03|",
+
+"editor.hoverHighlightBackground" :"|Red 04|" ,// (40),
+"editor.selectionBackground" :"|Red 04|",
+"minimap.selectionHighlight" :"|Red 04|",
+
+"gitDecoration.addedResourceForeground" :"|Green 01|",
+"editor.focusedStackFrameHighlightBackground" :"|Green 01|",
+"gitDecoration.untrackedResourceForeground" :"|Green 01|",
+"editorLink.activeForeground" :"|Green 01|",
+
+"editorOverviewRuler.incomingContentForeground" :"|Green 02|" ,// (80),
+"merge.incomingContentBackground" :"|Green 02|" ,// (33),
+"merge.incomingHeaderBackground" :"|Green 02|" ,// (80),
+"terminal.ansiBrightGreen" :"|Green 02|",
+
+"statusBarItem.remoteBackground" :"|Green 03|",
+"editorGutter.addedBackground" :"|Green 03|",
+
+"extensionButton.prominentBackground" :"|Green 04|",
+"extensionButton.prominentHoverBackground" :"|Green 04|",
+"editorBracketMatch.background" :"|Green 04|",
+
+"editorOverviewRuler.wordHighlightStrongForeground" :"|Purple 01|",
+"gitDecoration.conflictingResourceForeground" :"|Purple 01|",
+
+"terminal.ansiMagenta" :"|Purple 02|",
+"terminal.ansiBrightMagenta" :"|Purple 02|",
+
+"statusBar.noFolderBackground" :"|Purple 03|",
+
+"gitDecoration.modifiedResourceForeground" :"|Yellow 01|",
+"textPreformat.foreground" :"|Yellow 01|",
+
+"editorMarkerNavigationWarning.background" :"|Yellow 02|",
+"editorOverviewRuler.warningForeground" :"|Yellow 02|",
+"editorWarning.foreground" :"|Yellow 02|",
+"list.warningForeground" :"|Yellow 02|",
+
+"inputValidation.warningBorder" :"|Yellow 03|",
+"list.invalidItemForeground" :"|Yellow 03|",
+"inputValidation.warningBackground" :"|Yellow 03|",
+
+"terminal.ansiYellow" :"|Yellow 04|",
+"terminal.ansiBrightYellow" :"|Yellow 04|",
+"editor.stackFrameHighlightBackground" :"|Yellow 04|",
+
+"statusBar.debuggingBackground" :"|Orange 01|",
+"editorOverviewRuler.findMatchForeground" :"|Orange 01|" ,// (7e),
+"minimap.findMatchHighlight" :"|Orange 01|",
+
+"peekViewEditor.matchHighlightBackground" :"|Orange 02|",
+"editor.findMatchHighlightBackground" :"|Orange 02|" ,// (55),
+"peekViewResult.matchHighlightBackground" :"|Orange 02|" ,// (4d),
+*/

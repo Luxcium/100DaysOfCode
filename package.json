@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Luxcium/100daysofcode#readme",
   "dependencies": {
     "@types/chai": "^4.2.12",
+    "as": "^0.4.1",
     "chai": "^4.2.0"
   },
   "devDependencies": {
