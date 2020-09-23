@@ -237,5 +237,12 @@
       "column": 81,
       "color": "#9BEA"
     },
-  ]
+],
+"azureFunctions.deploySubpath": "azure/functions",
+"azureFunctions.postDeployTask": "npm install",
+"azureFunctions.projectLanguage": "TypeScript",
+"azureFunctions.projectRuntime": "~3",
+"debug.internalConsoleOptions": "neverOpen",
+"azureFunctions.projectSubpath": "azure/functions",
+"azureFunctions.preDeployTask": "npm prune"
 }
