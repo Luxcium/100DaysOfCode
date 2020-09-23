@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "[![time tracker](https://wakatime.com/badge/github/Luxcium/100DaysOfCode.svg)](https://wakatime.com/badge/github/Luxcium/100DaysOfCode) [![Twitter Follow](https://img.shields.io/twitter/follow/Luxcium?label=Follow%20me&style=social)](https://twitter.com/Luxcium?ref_src=github001)",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "exit 0",
     "build": "exit 0"
