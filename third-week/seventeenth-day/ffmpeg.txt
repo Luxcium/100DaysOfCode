@@ -603,7 +603,7 @@ File formats:
  D  kux             KUX (YouKu)
   E latm            LOAS/LATM
  D  lavfi           Libavfilter virtual input device
- D  libcdio          
+ D  libcdio
  D  libmodplug      ModPlug demuxer
  D  live_flv        live RTMP FLV (Flash Video)
  D  lmlm4           raw lmlm4
@@ -1121,7 +1121,7 @@ File formats:
  D  kmsgrab         KMS screen capture
  D  kux             KUX (YouKu)
  D  lavfi           Libavfilter virtual input device
- D  libcdio          
+ D  libcdio
  D  libmodplug      ModPlug demuxer
  D  live_flv        live RTMP FLV (Flash Video)
  D  lmlm4           raw lmlm4
@@ -1303,7 +1303,7 @@ Devices:
  D  jack            JACK Audio Connection Kit
  D  kmsgrab         KMS screen capture
  D  lavfi           Libavfilter virtual input device
- D  libcdio          
+ D  libcdio
  D  openal          OpenAL audio capture device
   E opengl          OpenGL output
  DE oss             OSS (Open Sound System) playback
@@ -3258,18 +3258,18 @@ downmix        DL+DR
 ------------------------------------------------------------------
 --sample_fmts-----------------------------------------------------------------
 name   depth
-u8        8 
-s16      16 
-s32      32 
-flt      32 
-dbl      64 
-u8p       8 
-s16p     16 
-s32p     32 
-fltp     32 
-dblp     64 
-s64      64 
-s64p     64 
+u8        8
+s16      16
+s32      32
+flt      32
+dbl      64
+u8p       8
+s16p     16
+s32p     32
+fltp     32
+dblp     64
+s64      64
+s64p     64
 ------------------------------------------------------------------
 --colors-----------------------------------------------------------------
 name                             #RRGGBB
@@ -3428,4 +3428,3 @@ drm
 opencl
 qsv
 cuvid
-
