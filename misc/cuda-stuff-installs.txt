@@ -1,0 +1,98 @@
+Total                                                                                                                        12 GB/s | 126 MB     00:00
+Test de la transaction
+La vérification de la transaction a réussi.
+Lancement de la transaction de test
+Les paquets téléchargés ont été mis en cache jusqu’à la prochaine transaction réussie.
+Vous pouvez supprimer les paquets en cache en exécutant « dnf clean packages ».
+Erreur : Erreur de la transaction de test :
+
+/usr/lib64/libcuda.so
+nvidia-driver-cuda-libs-3:455.23.05-2.fc32.x86_64
+xorg-x11-drv-nvidia-cuda-libs-3:450.66-2.fc32.x86_64
+
+/usr/lib64/libcuda.so.1
+sudo dnf swap xorg-x11-drv-nvidia-cuda-libs nvidia-driver-cuda-libs
+
+/usr/lib64/libnvcuvid.so.1
+sudo dnf swap xorg-x11-drv-nvidia-cuda-libs-3:450.66-2.fc32.x86_64 nvidia-driver-cuda-libs-3:455.23.05-2.fc32.x86_64
+
+/usr/lib64/libnvidia-encode.so.1
+nvidia-driver-cuda-libs-3:455.23.05-2.fc32.x86_64
+xorg-x11-drv-nvidia-cuda-libs-3:450.66-2.fc32.x86_64
+
+/usr/lib64/libnvidia-opencl.so.1
+nvidia-driver-cuda-libs-3:455.23.05-2.fc32.x86_64
+xorg-x11-drv-nvidia-cuda-libs-3:450.66-2.fc32.x86_64
+
+/usr/lib64/libnvidia-opticalflow.so.1
+nvidia-driver-cuda-libs-3:455.23.05-2.fc32.x86_64
+xorg-x11-drv-nvidia-cuda-libs-3:450.66-2.fc32.x86_64
+
+/usr/lib64/libnvidia-ptxjitcompiler.so.1
+nvidia-driver-cuda-libs-3:455.23.05-2.fc32.x86_64
+xorg-x11-drv-nvidia-cuda-libs-3:450.66-2.fc32.x86_64
+
+/usr/lib64/libnvidia-ml.so.1
+nvidia-driver-NVML-3:455.23.05-2.fc32.x86_64
+xorg-x11-drv-nvidia-cuda-libs-3:450.66-2.fc32.x86_64
+
+
+
+Dépendances résolues.
+======================================================================================================================================================================================================
+ Paquet                                                  Architecture                     Version                                          Dépôt                                                Taille
+======================================================================================================================================================================================================
+Suppression:
+ xorg-x11-drv-nvidia-cuda-libs                           x86_64                           3:450.66-2.fc32                                  @rpmfusion-nonfree-updates                           114 M
+Supprimer des paquets dépendants:
+ cuda                                                    x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ xorg-x11-drv-nvidia-devel                               x86_64                           3:450.66-2.fc32                                  @rpmfusion-nonfree-updates                             0
+Suppression des dépendances inutilisées:
+ cuda-11-0                                               x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ cuda-command-line-tools-11-0                            x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ cuda-compiler-11-0                                      x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ cuda-cuobjdump-11-0                                     x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                   271 k
+ cuda-cupti-11-0                                         x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                    60 M
+ cuda-demo-suite-11-0                                    x86_64                           11.0.167-1                                       @cuda-rhel8-x86_64                                    11 M
+ cuda-documentation-11-0                                 x86_64                           11.0.228-1                                       @cuda-rhel8-x86_64                                   331 M
+ cuda-driver-devel-11-0                                  x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                   107 k
+ cuda-gdb-11-0                                           x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                    15 M
+ cuda-libraries-11-0                                     x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ cuda-libraries-devel-11-0                               x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ cuda-memcheck-11-0                                      x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                   405 k
+ cuda-nsight-11-0                                        x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                   113 M
+ cuda-nsight-compute-11-0                                x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                   5.5 k
+ cuda-nsight-systems-11-0                                x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                   1.6 k
+ cuda-nvcc-11-0                                          x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                    60 M
+ cuda-nvdisasm-11-0                                      x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                    27 M
+ cuda-nvml-devel-11-0                                    x86_64                           11.0.167-1                                       @cuda-rhel8-x86_64                                   505 k
+ cuda-nvprof-11-0                                        x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                   9.7 M
+ cuda-nvprune-11-0                                       x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                   158 k
+ cuda-nvrtc-11-0                                         x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                    27 M
+ cuda-nvrtc-devel-11-0                                   x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                    86 k
+ cuda-nvtx-11-0                                          x86_64                           11.0.167-1                                       @cuda-rhel8-x86_64                                   397 k
+ cuda-nvvp-11-0                                          x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                   129 M
+ cuda-runtime-11-0                                       x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ cuda-samples-11-0                                       x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                   222 M
+ cuda-sanitizer-11-0                                     x86_64                           11.0.221-1                                       @cuda-rhel8-x86_64                                    29 M
+ cuda-toolkit-11-0                                       x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ cuda-tools-11-0                                         x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ cuda-visual-tools-11-0                                  x86_64                           11.0.3-1                                         @cuda-rhel8-x86_64                                     0
+ libcublas-11-0                                          x86_64                           11.2.0.252-1                                     @cuda-rhel8-x86_64                                   261 M
+ libcublas-devel-11-0                                    x86_64                           11.2.0.252-1                                     @cuda-rhel8-x86_64                                   333 M
+ libcufft-11-0                                           x86_64                           10.2.1.245-1                                     @cuda-rhel8-x86_64                                   157 M
+ libcufft-devel-11-0                                     x86_64                           10.2.1.245-1                                     @cuda-rhel8-x86_64                                   319 M
+ libcurand-11-0                                          x86_64                           10.2.1.245-1                                     @cuda-rhel8-x86_64                                    68 M
+ libcurand-devel-11-0                                    x86_64                           10.2.1.245-1                                     @cuda-rhel8-x86_64                                    69 M
+ libcusolver-11-0                                        x86_64                           10.6.0.245-1                                     @cuda-rhel8-x86_64                                   829 M
+ libcusolver-devel-11-0                                  x86_64                           10.6.0.245-1                                     @cuda-rhel8-x86_64                                   168 M
+ libcusparse-11-0                                        x86_64                           11.1.1.245-1                                     @cuda-rhel8-x86_64                                   153 M
+ libcusparse-devel-11-0                                  x86_64                           11.1.1.245-1                                     @cuda-rhel8-x86_64                                   313 M
+ libnpp-11-0                                             x86_64                           11.1.0.245-1                                     @cuda-rhel8-x86_64                                   137 M
+ libnpp-devel-11-0                                       x86_64                           11.1.0.245-1                                     @cuda-rhel8-x86_64                                   155 M
+ libnvjpeg-11-0                                          x86_64                           11.1.1.245-1                                     @cuda-rhel8-x86_64                                   3.7 M
+ libnvjpeg-devel-11-0                                    x86_64                           11.1.1.245-1                                     @cuda-rhel8-x86_64                                   5.0 M
+ nsight-systems-2020.3.2                                 x86_64                           2020.3.2.6_87e152c-0                             @cuda-rhel8-x86_64                                   582 M
+ nvidia-persistenced                                     x86_64                           3:450.66-1.fc32                                  @rpmfusion-nonfree-updates                            64 k
+ opencl-filesystem                                       noarch                           1.0-11.fc32                                      @fedora                                                0
+ xorg-x11-drv-nvidia-cuda                                x86_64                           3:450.66-2.fc32                                  @rpmfusion-nonfree-updates                           1.0 M
